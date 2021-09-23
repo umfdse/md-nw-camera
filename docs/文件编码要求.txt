@@ -1,0 +1,3 @@
+为了防止打包后的安装包安装时出现乱码：
+config/setup.iss需要ansi编码
+build/setup_resources/license.txt需要gbk编码（存在中文）

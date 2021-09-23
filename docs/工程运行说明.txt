@@ -1,0 +1,30 @@
+网络地址：
+默认开发环境：http://172.16.15.116:10180
+默认线上环境：http://gateway.whmhyl.cn
+当前开发环境: http://gateway-stg.whmhyl.cn
+
+
+默认配置localstorage清理目录:
+C:\Users\自己的名字\AppData\Local\md-nw-camera\User Data\Default\Local Storage\
+
+
+node-sass安装失败：
+npm uninstall node-sass && npm i node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+npm rebuild node-sass
+
+
+使用淘宝镜像install说明：
+
+1：删除node_modules中内容
+2:把dep_lib/内部压缩包解压至node_modules(nw-vue-devtools-prebuild不需要了)
+3:npm install -g cnpm --registry=https://registry.npm.taobao.org
+4:使用cnpm  install
+
+
+2020-07-22添加 by liuyi
+升级至最新0.47.0版本的步骤（注意：不支持xp系统，并且默认字体大小也有变动，需要调整样式)：
+1: package.json中 "nw": "0.47.0-sdk",
+2：node_modules中清除名字为nw的文件夹
+2: npm install --registry https://registry.npm.taobao.org执行
+4: config/index.js中module.exports.build.nw.builder.version属性设置为:0.47.0
+

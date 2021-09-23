@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XTextDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" EditorVersionString="1.2019.1.29">
+   <Attributes />
+   <AutoFixTextMode>None</AutoFixTextMode>
+   <XElements>
+      <Element xsi:type="XTextHeader">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XParagraphFlag" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextBody">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XTextTable" NumOfRows="2" NumOfColumns="1">
+               <Attributes />
+               <ID>table1</ID>
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <ID />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <ContentReadonly>True</ContentReadonly>
+                     <Expressions />
+                     <EventTemplateName />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <ID>txtTJZS</ID>
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>体检综述</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="1" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                     <PrintCellBorder>false</PrintCellBorder>
+                     <HeaderStyle>true</HeaderStyle>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <ID />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <ValueBinding>
+                        <DataSource>TJ_TJDJB</DataSource>
+                        <BindingPathForText />
+                     </ValueBinding>
+                     <Expressions />
+                     <EventTemplateName />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="0">
+                           <Attributes />
+                           <ID>txtZSJY</ID>
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <ValueBinding>
+                              <BindingPath>ZS</BindingPath>
+                              <BindingPathForText />
+                           </ValueBinding>
+                           <XElements />
+                        </Element>
+                     </XElements>
+                     <PrintCellBorder>false</PrintCellBorder>
+                     <SpecifyHeight>76</SpecifyHeight>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>2134.75</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XParagraphFlag" />
+            <Element xsi:type="XTextTable" NumOfRows="2" NumOfColumns="1">
+               <Attributes />
+               <ID>table2</ID>
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <ID />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <ContentReadonly>True</ContentReadonly>
+                     <Expressions />
+                     <EventTemplateName />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>医生建议</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="1" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                     <PrintCellBorder>false</PrintCellBorder>
+                     <HeaderStyle>true</HeaderStyle>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <ID />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <ValueBinding>
+                        <DataSource>TJ_TJDJB</DataSource>
+                        <BindingPathForText />
+                     </ValueBinding>
+                     <Expressions />
+                     <EventTemplateName />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="0">
+                           <Attributes />
+                           <ID>txtYSJY</ID>
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <ValueBinding>
+                              <BindingPath>JY</BindingPath>
+                              <BindingPathForText />
+                           </ValueBinding>
+                           <XElements />
+                        </Element>
+                     </XElements>
+                     <PrintCellBorder>false</PrintCellBorder>
+                     <SpecifyHeight>74</SpecifyHeight>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>2134.75</Width>
+                  </Element>
+               </Columns>
+            </Element>
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextFooter">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements />
+      </Element>
+   </XElements>
+   <SerializeParameterValue>true</SerializeParameterValue>
+   <Parameters />
+   <FileName>C:\Users\DCTAO\Desktop\体检报告_综述建议.xml</FileName>
+   <FileFormat>XML</FileFormat>
+   <UserHistories />
+   <ContentStyles>
+      <Default xsi:type="DocumentContentStyle">
+         <FontName>宋体</FontName>
+         <FontSize>12</FontSize>
+      </Default>
+      <Styles>
+         <Style Index="0">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingRight>15</PaddingRight>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="1">
+            <BackgroundColor>#02B2EE</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+         </Style>
+         <Style Index="2">
+            <BackgroundColor>#02B2EE</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingRight>15</PaddingRight>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="3">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="4">
+            <BackgroundColor>#02B2EE</BackgroundColor>
+            <Color>#FFFFFF</Color>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Bold>true</Bold>
+            <TitleLevel>0</TitleLevel>
+         </Style>
+         <Style Index="5">
+            <BackgroundColor>#02B2EE</BackgroundColor>
+            <Color>#FFFFFF</Color>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Bold>true</Bold>
+            <TitleLevel>0</TitleLevel>
+         </Style>
+      </Styles>
+   </ContentStyles>
+   <RepeatedImages />
+   <ControlOptionsForDebug>
+      <HeaderFooterFlagVisible>None</HeaderFooterFlagVisible>
+   </ControlOptionsForDebug>
+   <GlobalJavaScriptReferences />
+   <Info>
+      <LicenseText>南京都昌信息科技有限公司2020年旗舰版:南京都昌信息科技有限公司2020年旗舰版</LicenseText>
+      <CreationTime>1980-01-01T00:00:00</CreationTime>
+      <LastModifiedTime>2020-05-09T15:14:02.0025825+08:00</LastModifiedTime>
+      <LastPrintTime>1980-01-01T00:00:00</LastPrintTime>
+      <Operator>DCSoft.Writer Version:1.2019.1.29</Operator>
+      <NumOfPage>1</NumOfPage>
+   </Info>
+   <BodyText>体检综述 
+  
+医生建议 
+  </BodyText>
+   <Comments />
+   <LocalConfig />
+   <PageSettings>
+      <PageIndexsForHideHeaderFooter />
+      <PrinterName />
+      <PaperSource />
+      <LeftMargin>20</LeftMargin>
+      <RightMargin>85</RightMargin>
+   </PageSettings>
+</XTextDocument>

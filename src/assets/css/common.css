@@ -1,0 +1,438 @@
+/* 业务页面样式，各页面复用率较高的样式 */
+/* 字体大小统一用媒体查询控制 */
+/* 一级标题 小屏18px 大屏20px  */
+@media screen and (max-width: 1440px) {
+
+  .header .el-dropdown-link,
+  .g-first-title {
+    font-size: 18px !important;
+  }
+
+  .auto-width {
+    width: 50% !important;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+
+  .header .el-dropdown-link,
+  .g-first-title {
+    font-size: 20px;
+  }
+
+  .auto-width {
+    width: 33%;
+  }
+}
+
+/* 二级标题 小屏14px 大屏16px  */
+@media screen and (max-width: 1440px) {
+
+  .header .header-title,
+  .data-tj-title,
+  .nav .el-menu .el-menu-item p,
+  .g-second-title,
+  .add-patient-btn span,
+  .aid-detail-tab .el-tabs__item,
+  .Kfpage .section .main .el-tabs__header .el-tabs__item,
+  .add-el-dialog .el-dialog .g-second-title .el-form-item__label {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+
+  .header .header-title,
+  .data-tj-title,
+  .nav .el-menu .el-menu-item p,
+  .g-second-title,
+  .add-patient-btn span,
+  .aid-detail-tab .el-tabs__item,
+  .Kfpage .section .main .el-tabs__header .el-tabs__item,
+  .add-el-dialog .el-dialog .g-second-title .el-form-item__label {
+    font-size: 16px;
+  }
+}
+
+/* 内容  小屏12px 大屏14px */
+@media screen and (max-width: 1440px) {
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video,
+  .g-content-size,
+  .el-button .el-icon-refresh-right {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video,
+  .g-content-size {
+    font-size: 14px;
+  }
+
+  .el-button .el-icon-refresh-right {
+    font-size: 14px !important;
+  }
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  /* text-align: left; */
+  /* letter-spacing: 1px; */
+  font-family: '微软雅黑', 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif, '黑体', 'Avenir', Helvetica;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+a:hover,
+a:active {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border: 1px solid #e8e8e8;
+  outline: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+.alignr {
+  text-align: right;
+}
+
+.alignc {
+  text-align: center;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.mr5 {
+  margin-right: 5px
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* text-align: left; */
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+  /* 滚动条整体样式 */
+*::-webkit-scrollbar {
+  width : 6px;
+  height: 6px;
+}
+  /*滚动条里面小方块*/
+*::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background   : #535353;
+}
+  /*滚动条里面轨道*/
+*::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background   : #fff;
+}
+
+
+
+
+
+
+
+
+

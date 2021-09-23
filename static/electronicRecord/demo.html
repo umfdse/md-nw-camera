@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <title></title>
+
+    <script src="https://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://172.16.15.231:10086/DemoDocumentImageService.aspx?js=1"></script>
+
+   <style>
+
+   .button {
+
+    background-color: #4CAF50;
+
+    border: none;
+
+    color: white;
+
+    padding: 10px 16px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 14px;
+
+    margin: 4px 2px;
+
+    cursor: pointer;
+
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div style="background-color: #fff; padding: 5px;">      
+
+        <span>测试纯JS控件</span>
+
+    </div> -->
+
+    <input type="button" value="显示打印预览工具条" onclick="OpenPreview();" class="button" />    
+
+    <!-- 打印预览使用的工具条，这是用户在外头自定义的工具条，初始化时不显示，由外部控制是否显示-->
+
+    <div id="btrPrintPreview" style="border:2px solid black;z-index:1000;border:1px solid black;background-color:#cccccc;display:none;">       
+
+        <input type="button" value="打印" onclick="PrintDocument();" class="button" />
+
+        <input type="checkbox" id="chkJumpPrint"  onclick="JumpPrint(this.checked);"/><label for="chkJumpPrint" >续打</label>|
+
+        <input type="checkbox" id="chkMouseDragScroll" onclick="SetMouseDragScroll(this.checked);" />
+         <input type="button" id="loadXml" onclick="LoaclFile()" value="命令打开本地文件">
+         <input type="button" id="version" onclick="AboutControl()" value="查看版本号">
+        <label for="chkMouseDragScroll">鼠标拖拽选择</label>       
+        <input type="button" value="关闭打印预览" onclick="ClosePrintPreview();" class="button"/>
+
+    </div>
+
+    <script type="text/javascript">
+
+        //设置续打
+
+        function JumpPrint(setValue){
+
+            var ctl = document.getElementById("myWriterControl");
+
+            ctl.SetJumpPrintMode(setValue);
+
+            document.getElementById("chkMouseDragScroll").checked = false;
+
+            ctl.setMouseDragScrollMode(false);
+
+        }
+
+        //显示打印预览内容
+
+        function OpenPreview(){
+
+            //获得最外面的容器元素并设置位置
+
+            var ctl = document.getElementById("myWriterControl");
+
+            //填充打印预览内容
+
+            ctl.LoadPrintPreview();
+
+        }
+
+        //设置在预览中，使用鼠标滚轮拖拽
+
+        function SetMouseDragScroll(setValue) {
+
+            var ctl = document.getElementById("myWriterControl");
+
+            ctl.setMouseDragScrollMode(setValue);
+
+        }
+
+        //打印文档
+
+        function PrintDocument() {
+
+            var ctl = document.getElementById("myWriterControl");
+
+            ctl.PrintDocument();
+
+        }
+
+        //关闭打印预览
+
+        function ClosePrintPreview() {
+
+            var ctl = document.getElementById("myWriterControl");
+
+            ctl.ClosePrintPreview();
+
+        }
+
+        //使用命名，打印文档
+
+        function PrintDocumentByCommand() {
+
+            var ctl = document.getElementById("myWriterControl");
+
+            ctl.DCExecuteCommand('Print',true,null);
+
+        }    
+         function LoaclFile(){
+             debugger
+             var ctl = document.getElementById("myWriterControl");
+             ctl.DCExecuteCommand('FileOpen',true,null);
+         } 
+         function AboutControl(){
+            var ctl = document.getElementById("myWriterControl");
+            ctl.AboutControl();
+         }     
+
+</script>
+
+<div id="myWriterControl" style="width:100%; border:2pxsolidblack; height:900px; border-radius:5px"
+ContentRenderMode="NormalHtmlEditable" WorkspaceBackColorString="#B1CAEB"
+WorkspaceBackgroundImage="Workspace-Background.jpg"
+ServicePageURL="http://172.16.15.231:10086/DemoDocumentImageService.aspx" UseClassAttribute="true"
+HeightCompress="true" PrintBackgroundText="true" PreserveBackgroundTextWhenPrint="true"
+BackgroundTextOutputMode="Underline" ImageDataEmbedInHtml="true" ServerSleepForDebug="0" AllowCopy="false" 
+pixelpagespacing="5" clientcontextmenutype="Custom" showdebuginfo="false" HeaderFooterEditable="false" registercodeindex="0">
+      
+        
+    </div>
+
+   <script type="text/javascript">
+
+           // 获得控件容器元素
+
+           var ctl = document.getElementById("myWriterControl");          
+
+           // 绑定控件
+
+           BindingDCWriterClientControl(ctl);          
+
+           ctl.ToolbarForPrintPreview = document.getElementById("btrPrintPreview");          
+
+           // 创建编辑器框架
+
+           ctl.BuildFrame(function () {
+            var opts = {
+            PaperKind: "Custom",//自定义
+            PaperWidth: "297",//宽度
+            PaperHeight: "1000",//高度
+           Landscape: "false",//横向，纵向
+           ViewLeftMargin: "10",//左边距 单位 像素
+            ViewRightMargin: "10",//右边距 单位 像素
+		    ViewTopMargin: "100",//上边距 单位 像素
+           ViewBottomMargin: "300",//下边距 单位 像素
+           ViewHeaderDistance: "10",//页眉位置 单位百分之一英寸
+           ViewFooterDistance: "10"//页脚位置 单位百分之一英寸
+			}
+			var ctl = document.getElementById("myWriterControl")
+			ctl.ChangeDocumentSettings(opts);
+            // var ctl = document.getElementById("myWriterControl");
+            // ctl.LoadDocumentFromFile("ry.xml", null);	
+            loadXmlTemplate();
+           });  
+            // var ctl = document.getElementById("myWriterControl");
+            //  ctl.LoadDocumentFromFile("ry.xml", null);
+            // 加载xml模板
+            function loadXmlTemplate(){
+               
+            var file = "";
+           $.ajax({
+            url: "/xmlTemplate/ry.xml",
+            dataType: 'text',
+            type: 'GET',
+            timeout: 2000,
+             error: function (xml) {
+                alert("加载XML 文件出错！");
+             },
+             success: function (xml) {
+                 var ctl = document.getElementById("myWriterControl");
+                 var result = ctl.LoadDocumentFromString(xml, "xml");
+             }
+         }); 
+            }	   
+          
+             
+        //  window.onload = function(){
+        //      debugger
+        //     var ctl = document.getElementById("myWriterControl");
+        //     ctl.LoadDocumentFromFile("ry.xml", null);	
+        //  }
+    </script>
+
+</body>
+
+</html>

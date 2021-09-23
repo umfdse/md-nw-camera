@@ -1,0 +1,14 @@
+$--color-primary: #1374E4;
+$--background-color-base: #ffffff;
+$--input-height: 32px;
+$--color-text-regular: rgba(0, 0, 0, 0.87);
+$--button-font-size: 12px;
+$--border-radius-base: 3px;
+$--button-padding-vertical: 8px;
+$--button-padding-horizontal: 15px;
+$--font-path: '~md-element-ui/lib/theme-chalk/fonts';
+@import "~md-element-ui/packages/theme-chalk/src/index";
+@import '../font_md/iconfont.css'; //  引入明德UI设计的图标
+@import './base.css';
+@import './common.css';
+@import './reset.css';

@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XTextDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" EditorVersionString="1.2020.6.2">
+   <XElements>
+      <Element xsi:type="XTextHeader">
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XImage" StyleIndex="1">
+               <Width>133</Width>
+               <Height>133</Height>
+               <Image>
+                  <HorizontalResolution>96</HorizontalResolution>
+                  <VerticalResolution>96</VerticalResolution>
+                  <ImageDataBase64String> iVBORw0K GgoAAAAN SUhEUgAA ACoAAAAq CAYAAADF w8lbAAAA AXNSR0IA rs4c6QAA AARnQU1B AACxjwv8 YQUAAAAJ cEhZcwAA DsMAAA7D AcdvqGQA ABT/SURB VFhHdZn3
+ X1Rnm8b9 R/a3fdXY o6KxIU2k CCpgUBBE inSGYZih 96IgvXek SZEiTRCw GzV2RUUl Yo/E+MYk GoyCfPc+ M7qb3c9n j5x+5jzX uct1X/fj HGSZ/cdq 2H7Wr5+U U/2hbJS/
+ z9P627Jl ZkbuTn+A jy/gaS9v B9IYqwjl x4OeXNjv xqXsvTxp 0DFzthTe XJZnX8uv 5Df6188y LXvZyotk r4yhH8iw zMqxcqa/ bwDFHMNe Ls8qw//z YVnkVIGr /GD26xs/
+ v+PDq/tM nqzlTlc+ r26e4vcX z7hz+SFn e68xdPgC /XWnONFy gUtDN3k0 +pR3ExM8 Pt3BeEce P98Y4PPU rwJQPlIG +SzvVQxg APZlUeDI bkY/puGq AeiscsHw sLJ+/cms
+ XFcAKtvZ z5/46/ko D7oK+ePe Dzy98ZhE /3J2rI3B cn4IZt+E Yzw/FCfj eLzs0vDZ nsPGBX5y XYW53HO3 i6Yyp4O/ nz3n1x86 uNdfBe/e GMZQDKAA MvzJoqCQ D1AODRe+
+ WtRw66N+ rzytON0A WfmI2b9e c+dIITMP L3Bh4BaW y4MwXajB bEEIm5eE Yrs8Eu3u ciK9K9Hu q+Tc4E84 mSeQHNLK XusMrBfH khTQTHH8 CCZz9+Hl FMvv4y94 PlDL5OVj
+ EhbvZKB/ WFXZ6Nd/ uP7rkfKQ AaRy87M+ DhEr/n7/ PI+Gmxg7 fZMdJlrM 5gdjtjga p/VJZEW1 01V9GbVH KTlJHaRp GthlHsdw xyhqtxIq UgbQuufj aZ9BVfYI BcmdbDZS
+ yzvC9R+5 P6yM38fu 8qC3At6+ EKNOix0l zGR8AxYx 3f8A/WI5 /Q2DJfVe mJ7i1Q9H eHf/NhXx TZgvDMZy ng6/bZkC 7hI2q9QE uhaRGt2A t1MGFnLf bkU0Nsvj ULkWELC9
+ BIsFaqyW x2C1Mprm 0ivyYR0E OuVwpGQU B+M4TBbo sF4dxoNz o0z01fLp xagMr4DV 55geoxJ2 yqIH+gW0 LNMGS356 z+SZRv4Y H8Vveyom 87XYrYok wr+aINdc ajIGiPKo
+ xWldNEmB pZSnnGCD xOmGeRKr 88Ixnath 41yVWC5M f24xX8Om b0LZIoC/ N0ukufA8 btYpBDkW YSUfaCr3 jjef5fmJ Rj69vCGQ FERfDWjY z9FfE1Mr lKBPMMnG V2dbJYZG
+ CXbIkFhU s3V9AiqX YtqrL9JU coZtq6Kw +EbDtjUJ mC1Vs3ll DOYCwtY8 kZ2O+9m3 OxOfnZns sIxh84ow LBaFsWme mk3yASbz NLhuTibM rZyjtTfE /c0S5xES Cmo6KwZ5
+ OljLzOQ9 AWJwu6Sx gvN/XK8k vhKfvz88 y59jtwh0 TJEXhxG6 u4SgXVls Xqxmp0US /rsO4rs1 D7N/abEy isHHq5rA 8DYCdc3E H2gjNbuW AwXVZJTW kJyfT1ZZ OakHytjt
+ GofptwGY z43AxTSD TUs0xHpV oPMuo7Py KrbLwjCf F8r5Y9d4 2C0x+37S 4F0DTgEq 4PT0qFj0 w3N+Gmqk IvEwLpbJ 7NlygCjf StpLruNp lYOlgN22 RiVWCiA0 SICkdJKW
+ 2Ud+yTD5 hW04bHNm yeKVpGdX kl5YSWJB Ptm1xaQU JhOdHUFY YjjOO/ww WeqLycIQ CZFQrJdq KUrsI8Dh IBbLNJgu CGbyxiMe Dx4SUH8z o3e5AlQs qSf12Q+M tuczfuaG
+ 3npan2Lq S0+RHFaP xeJQ+dpo TL4RF63w Ii2+mPOX xymq7KO8 vJ9gHw1r ly3Ey82V grwqyqpa yCkpJTYt mcziAiL2 JxKSpiYo eR+abB/U EfGYLvER UBLP83Xs WJdAcWov
+ DQWnJAQ0 uJjH8+7W Baaf3hB4 iqsF6Izi ecn2Dy8e MDN2Xtwb Ly6PINyr in12B4kP qCfaS8BK UtjbHMQ7 pAx3Tx03 b9+i40gH xquW4O9i S022ZHNj F43NXYRH ROPn68/B
+ gxkcyM9E lxGPKj0c XbpawAez cNl/4LZr J5ZGHpJI WiwXheP/ fT7VeSdx loJhPldN e3kv12vT JGemDED1 lpUEGjuS x+Xj1yVL dezblsuW 1VpcjJPR uFVI1gez XbI1POEI
+ nlHVuPik EuIXyJ5t TqjEiqka NQ1l9STE ZhIbl4aX py/rjVYz PDRA2eFq 4orSUCeo MNm0AuO1 /0moxpnY PGdSMkPZ tMIbs4Vh 2H0XJ0mp IlPbhOW3 kngSs9M/ P+DNnQsC
+ 8LMAlZD9 MPkTf9w5 h+VqCXZx 8+H8c5Sn HcdkiWTr Qp1UIh1p qd3okppw D6nFU1NH 8oEj5GbX k591mIKi AWrKu+gv ruDo/gO0 pGagtbHj Sk8PN2/d wsvPEyvj bwnysZUE
+ 28eBmkAO 1HmQVrMD lXafAA1g y3ItNVln qM7uQ7u3 VKhNTU/9 KR505kgO /W3I+p9P NzI5Os7m 5Rp07jVC 5HlsnO8v lpQyOU+L al85WXn9 JOccxVNb S1xWD7UN J6mtHaay
+ /DiVJV10 xWTyKjSA 6YQYflUF woE0jjpu RbPNBm8H W4Ldt5Ff HEP4fhf8 tBYklewi 9ZAtkcXW bN/sxoa5 IaSEtlB5 YICtq4WP xUDrFnnz 273zTL15 qmT9FGPt hfJQGV72
+ OUK819F6 5pMcfFiS Soe5URTh 0e34Rzaj TuwiKXuY /Xk9ZBX0 k5TTSXZu N03+iTzT 6Xi+dzdj JmuZ3OnA rQ2r+Zie wAkPJ1pz IqlpTKW2 Poqs8gAy yr3IrnMn rdqOlJot
+ 6BK8hAV8 RMBoyIsb ZKhjjGDn UjaKoPnz /lNeXewW oJ9+5pfL w+w0icNu dQy5CT0E 7yyiueCy mD8EX69K olM7CUlo wyO0Du/Q RtTJbQTo 6gmOqadA V8ANVTi/ eu5mYvUS
+ fjJayoTR Ch6tXs79 dav5+0AS JwNdaTwU QVFLJIml 7kQcdCCr cQ+Zh1yI L9tOQrkj tsbumIsG +N4kmVhV nfB4gYyv pUIU10Rn gQB9Mcz7 Zy+l0qik xEWg9izB aaOQ/UIR
+ Dou1hES0 4qNrZK/2 EB7hUtfD m/CT+h4d 30B5dB7n vQOZbarl lsk6ftps AT+eg2si lJsPMbbG iNdpCbzK TGbI35G2 kmCyG8XF ZW4kVG5l j24VEfn2 xFZZ4+Xl ha1RBDbL
+ InA2TWS/ ulO0gkYK TDp3e0qZ 82EomwfX ngpNhBCy I4/mitM4 rheKmB+B tZTK1P1t FJb00dp8 gtbWEZob R+hsGuZ4 bhW3VBre aUJ4+L0D H7OyGHPZ AVMfJPg/ Mnv1R574
+ +fFnZBgP N6zhw/44 RgK201Tm K+73IKl8 CzGlVvgl r8YnaaWw wm42Lgpg m1EyO9ZE 0Fp8AQup Xjs3xPHL 1WPMGa/T cWnwtpB5 iJTLQvZr WtgssWI8 T8UekWdd R04w1H+G
+ M91DnOge ZqRriAuH Whn12cM7 dRA/rV7K A9PvuO7m yG/dzSJo lHZDyHny Fx4L0d+1 tWJi7TrG 162RMEik y28z+aW7 SSi1Q1Ng SkKZLWFZ FmjSHbFY 6i9iJpwd 6+OIkQS2
+ /FY4Vqhr avwGcy4X eXKiXeJR BEPQrmL2 WmXgbZ0v Ga8m3D2X 4wKu7+hx ho6KFXtO C9ATXCiu ZDY5ntvr VvJs+WIY 6Be1LuJ3 RiypsJ6y UcTDp7dy /T2v4yJ5 uXwRvwbt
+ 4+Qee1LS bYSivscr fi2JZVvR FVizL3oz m5ZKUi0Q DbE8iqa8 C2xfK/pg QSjTzx4w 58csF453 XJRSFkpR bA/nen5C J2LBcU0K ur15DHed YaT7JCM9 IwJ6hOH2 ES5WNzHh
+ 7cVb7108 k+SZPnlK UQqy6uvx fwsJfTM4 PcOThCie r1rKTHYG xzztycp0 IF+SyT9t PRG5lgSl GOMXYYvZ cm/BEcXW NfFE+lbg sFrU2QIV H5/eZc7d skBOd10W 3gzDTzIt
+ QOLUxkip wRqRdjkM dY4w2DFC X2sfvUeO cax1gKH8 CmbjI7my cRWPVixh pkn6n3si eieffzGn onIkBKSp 4951Xqr9 xfKLmPTe zTkvO7LT nNlf60ZI phm6IhtC UjZKMdkt
+ 6sqHjfNE RYn632Nz AOsl0Zgu CuHTs/vM mWyJ5fqZ MXF1lDRj OtGGkVgu E6DyJa5S 9/vbBjna MkBP2wD9 HcfF+sP8 0NDJzT27 +ZAcw+MV q3m0ahl3 HO152yiK R1+bReTc
+ GeO3/AKu W23kyeq1 vNiyhT/T Y6j3txbi 90Odaolv 3HpCMywJ K7QkNsMX syWBonUT cV6fKGqq FOtFsVJW Q6VduSDN 3Y81vHjw zJDly8Oo yz3B8SN3 aSn+AeuV Ig4OD9N5
+ 5DjdAri7 /Tg97YNi 1WOcrW7m RoA/U6kJ vPD1YCot hjHn7fDX O1GOYs1L P3B783qm CjJ4FRLC v9NiaXC3 ICd3HzEH XYhMssBT t46texcS WWBBRKyv GMePPVa5 2H4bzXYR
+ 5ebzVbjb xvLkTLPw 6J93ef/o tnSKwpui WjJ0XSI2 kqjPPYv5 omBqi4Zo OdxLS0M3 R5r7aWvu oaO5l86W Pi7VNXPF N5g3Bbnc MVvLc+P1 vBSBMqEN ZdLDTQrA SiZ9vbjg
+ 7UJj0A5i 4hyIzvTE P8aG+Kyt uAatwcRh AQFJZjjY e4jLAylO PiZVsY2G 3FOiVUOJ 9ilk9EiW AJ3+i4dD 9fjYJ2Aq Uk7jUU51 Th8tZSf1 LcdeRxEZ ArLr8ABH xartzcck
+ DI5xvPM4 Xc19DFY2 cdrbT1+B Hq4z4vlK qUwSCs9E nz6yt+Rd ejy1LluI T/EmOG6n dAL2UtVs 0aTYY793 Jd9Zz0eb uoeNKz31 Iroqu5/u +msEu0gX IT3Ymd5r PBksU2r9
+ Zya68mmt GtBLvFD3 Uvyd9rPT PFlMHyzc pqG1+ji9 bUPi9iE6 mwdk7eVI i7xQEqtF gA9WNvKD f4CATeeX ADdm8zN4 G+DL+9Qk uoNEBsZ4 oQ53Y1+w E3sCLNm1 10y0gzW2
+ rqswtV+F m4uHkL0/ PlsyaCw8 QahXtjCP aOCFQfz1 ZILXDy8Z JiAmR0/z 8eVTqa0i 8xZq2Cwm z084SoJ/ jV4oeG7N oKW2j6qy Fgrz6ijK a6W0sJ2G uh4OHeqk tqadgaJD
+ 9Ht4cWa3 M0edHRl2 caFd5U55 kY6o+AA0 Gi+cPTbJ aordLiNc BbCx7VJM zEwl26U1 WRBG5N5a ochezva8 wEE4dO/W SH453S59 3h/MUWaV eP8Hkyeb CN2zn82S VNUZJ6nK
+ GaRK+qG9 ovJNl6qI Dq6WQbtF e7aSk9dM elo5xdlN VJaKeqrq 4WhTK111 1dQeyKAk PVXCR+K8 Opmcylj8 1bvxC9iF 4w5znHaZ YeW8DhuX NVhv24CJ kasYSIX9 d5E4rIuT
+ vkwlRC9h KAXn9e0n UufLheo+ iOuVmYmZ acaPN/NO xInJQj9c rdPl66r0 2rCh4Dwb xQWbvtWQ ldRIbmYV GWlVJCQW kZtTJzq1 VT6gjc7G Vg7XVNBQ XkZ1eRG1 dbk0H86l
+ sCgRT59d +Pi44Oho wS53K4xt VrHdxRLT NXZSugME qIYKEer5 iT2khzeS GFQrnJ7O n1d6mfnt ufRzswpQ pZRIRfnw hkdHy8iN qxeSlW7w XyrRp5mE exZKc6fS x6+V9PAt
+ Jb30SV90 uKJGEq5a VPgROg4d pUnoqr6k nIzYKNKS I0hPUlNQ nExUhB87 XW1wcbXF 28eJLdvX YWWzAWuR dWbfBMt7 1QRL6W4q HqG1/DR5 yf3CNgE8 uTbKTdHJ s7N/Cz6l
+ ZxLXK4iV eZ7fbp7k 3d1R7NcL VekrRBhb jHTSloyI ooqSLw/F VsAWRlfQ XdXIqZZG Lna0cbKj hWLhyaai DEI9hSOD PVH57UIb 6IEq0IXA AEc83Ozw 9HDE2dFZ Otmd8i61
+ sIxKckKF h22GtMyD NJWex2F9 DAWxjUyc aJVu+bXg MkxB6LNe OZpVJqRm 3jPeX8Xz q48EZDCb FoWRoekW q93gx5EJ PLdl6Ntb C7n3vbGK 1oJ6Lvd0 cKa9kdbS XJpKMlD7
+ fI9OhHJU mAfaUHeC fR2JCHHF zckRRxsP TKS9MF+g TJRpCHQu or3sKtbL dBICoeww i8XDOpqp +7d4c/cc n5XC8d99 /awy36SA FQGh1Od3 r3jQV865 rivy0lC2 rtTRXX2N
+ 8qxuBtul 1C7UirU1 bBCLmywI EMDh5ISX 0F3WQXtJ FanhYRTs TyMjLpao IB1avwgc TQIxXxIg zwdhLJpC 0RXFKf0c yh/gUN4w vjtTGGwZ Z9s6LVNP nvFkoEKq 8N8GbWPA
+ qQA1HHy9 qoTCpzfj PBtqYrBe qtOSIFzM 4ihNkaZr bRR7NidT ENcp2iBA eqowLKSa mUk8K640 k9hSnreQ Valqirgw +yZIH9/K ZJm5eMNy XqT+PNy9 kLayc6Rr 2/ETIbRz
+ k5bXo6M8 7isWkL8r LtbD+mLQ r0AN86EG rArUGWZ+ HuVRbyXX T1zBdLEA ENqyWRFN XcEI1y4+ FQpqJyey Sz/pZSxt jIm4U4k3 c0kOEwW8 fiZPklLp Zv+llOdQ KtOGRfgI
+ Z85VYSw6 s/fwA5xM tHjaxjH1 9BlPe0uE hN7zUUlu AWMAqST7 1xiVky// tSAP6CfC 9f9m3jzh wdFi/rj/ BHebeH0c 6fZUEhtU zfWLz8mI OiwAAxnu uCOq6jZt pVcJc6mU
+ JAmjNvOs no9Lk4f1 U0Gmc8Ok ceyi4uAw F/omaci6 JNYPpjih lg8PrjMx UC3EPqVH ogcnFtVP 5ii5I1gk 6w3oDU43 LHoSUK5L 74Nk3uOR w7y/epqh uiGsvwth y/I4XK1S
+ SFF1YrdW y6nee3Q0 nKKucECo pkDiOIDO mvN01p7l +qmXJAUf ZdOyUBpE tW+UznbT Yn9Urqk8 u3afiZEW 3o6d0c/W KBj06PRG /PQFqLIR i378AvAr SP3snn7/ dU5fHp95
+ J131HS4e SmLm+X3p n66INcSF 0mcl+Tfi LXHblHWK 1oozbDWJ Rr27gvKM biL8Mxnp uIeDcTI2 K6OxXK7G yyGR12PP eHupl9Ge KmanfuXT tIGClNGU vR6gsujn HZWzf1j0
+ 604//ajc V57SM4Hs FC5TzCz0 9ef4Ze51 ZPHv0SGR hy+E+I8R vDubXWYx 2BkF6ufm zeYHYfVt uHBiNHvt I0gIzuPq 8HXJ6HFe n2vgjgD8 /PsLGeO9 RJ6Mp/RX ynACwuB6
+ BYyMJ9f/ MTX+/y3K A4aH/vci L/o8xfTb x0xe62Wi u4C7nQW8 PNfB+/sX mX5yD57e 5qPs39w6 y6Pheu63 ZfFysJRf x6+IR/8Q cEq1+ef7 /+84//c6 /BcHD31B MZ73CQAA
+ AABJRU5E rkJggg==</ImageDataBase64String>
+               </Image>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="2">
+               <Text>林周县人民医院农牧区合作医疗</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="3" />
+            <Element xsi:type="XString" StyleIndex="2">
+               <Text>“先诊疗后结算”患者住院治疗费用结算协议书</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="3">
+               <AutoCreate>true</AutoCreate>
+            </Element>
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextBody">
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+            <Element xsi:type="XTextTable" NumOfRows="1" NumOfColumns="2">
+               <ID>table1</ID>
+               <XElements>
+                  <Element xsi:type="XTextTableRow">
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="13">
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <Text>甲方（患者）： </Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="10">
+                                 <ID>field1</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <SpecifyWidth>354.330719</SpecifyWidth>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="14">
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="10">
+                                 <ID>field2</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <SpecifyWidth>236.220474</SpecifyWidth>
+                                 <InnerValue />
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <Text> 乡（镇）</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="10">
+                                 <ID>field3</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <SpecifyWidth>236.220474</SpecifyWidth>
+                                 <InnerValue />
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <Text> 村</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Width>846.9167</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Width>1027.83325</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>乙方（定点医疗机构）：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="9">
+               <ID>field4</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements>
+                  <Element xsi:type="XString" StyleIndex="4">
+                     <Text>林周县人民医院</Text>
+                  </Element>
+               </XElements>
+               <BorderElementColor />
+               <SpecifyWidth>354.330719</SpecifyWidth>
+               <InnerValue>林周县人民医院</InnerValue>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>    为深入贯彻落实医药卫生体制改革精神，有效缓解林周农牧民“看病难，看病贵”问题，更好地向群众提供优质、安全、价廉的医疗卫生服务，执行《林周县县级医疗机构“先诊疗后结算”实施方案》</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="6">
+               <Text>{</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>林政发（2013）52号文件</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="6">
+               <Text>}</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>，经甲乙双方同意签订本协议。</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>甲方住院期间，乙方不向甲方收取住院押金。甲方在办理住院手续时须向乙方提交林周县农牧区医疗家庭账户、身份证（或户口本）原件（复印件）等证明。</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>甲方在住院期间，乙方每天须向甲方提供住院费用一日清单。</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>甲方在住院期间，对病情所需采用医保或农牧区医疗规定以外的自费检查措施或药品，乙方有告知甲方的义务，征求甲方意见并同意后，双方签署知情同意书。</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>乙方须在甲方出院前1-2天内告知甲方其住院总费用和个人应承担的住院费用，以备甲方筹措住院费用。</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>甲方出院时，应向乙方一次性交清住院期间个人应承担的医药费用（个人承担的医疗费用25%包括所有一次性耗材费）</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>如甲方故意或恶意拖欠应付住院费用，记入医院黑名单，同时将患者所在乡镇纳入医院黑名单，不予执行“先诊疗后结算”的政策，并上报县卫生局等有关部门，向人民法院提起诉讼，追究甲方相关法律责任。</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>本协议一式两份，甲乙双方各持一份。</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>本协议自签订之日生效。</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>甲方签字（章）：                          乙方盖章：</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="7" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text> </Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="8" />
+            <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+            <Element xsi:type="XString" StyleIndex="4">
+               <Text>                                              年        月        日</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="12" />
+            <Element xsi:type="XParagraphFlag">
+               <AutoCreate>true</AutoCreate>
+            </Element>
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextFooter">
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XParagraphFlag">
+               <AutoCreate>true</AutoCreate>
+            </Element>
+         </XElements>
+      </Element>
+   </XElements>
+   <FileName>C:\Users\DCTAO\Desktop\太极医疗模板全部\护理文书 24\先诊疗后结算单.xml</FileName>
+   <FileFormat>XML</FileFormat>
+   <ContentStyles>
+      <Default xsi:type="DocumentContentStyle">
+         <FontName>宋体</FontName>
+         <FontSize>12</FontSize>
+      </Default>
+      <Styles>
+         <Style Index="0">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="1">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>15</FontSize>
+            <Bold>true</Bold>
+         </Style>
+         <Style Index="2">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>微软雅黑</FontName>
+            <FontSize>15</FontSize>
+            <Bold>true</Bold>
+         </Style>
+         <Style Index="3">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <SpacingAfterParagraph>41</SpacingAfterParagraph>
+            <LineSpacingStyle>SpaceExactly</LineSpacingStyle>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="4">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>仿宋</FontName>
+            <FontSize>12</FontSize>
+            <Bold>true</Bold>
+         </Style>
+         <Style Index="5">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <SpacingAfterParagraph>41</SpacingAfterParagraph>
+            <LineSpacingStyle>SpaceExactly</LineSpacingStyle>
+         </Style>
+         <Style Index="6">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Bold>true</Bold>
+         </Style>
+         <Style Index="7">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <SpacingAfterParagraph>41</SpacingAfterParagraph>
+            <LineSpacingStyle>SpaceExactly</LineSpacingStyle>
+            <FirstLineIndent>24</FirstLineIndent>
+            <LeftIndent>93</LeftIndent>
+         </Style>
+         <Style Index="8">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <SpacingAfterParagraph>41</SpacingAfterParagraph>
+            <LineSpacingStyle>SpaceExactly</LineSpacingStyle>
+            <LeftIndent>93</LeftIndent>
+         </Style>
+         <Style Index="9">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>仿宋</FontName>
+            <FontSize>12</FontSize>
+            <Bold>true</Bold>
+            <BorderWidth>1</BorderWidth>
+            <BorderBottom>true</BorderBottom>
+         </Style>
+         <Style Index="10">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>仿宋</FontName>
+            <FontSize>12</FontSize>
+            <Bold>true</Bold>
+            <BorderWidth>1</BorderWidth>
+            <BorderBottom>true</BorderBottom>
+         </Style>
+         <Style Index="11">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <SpacingAfterParagraph>41</SpacingAfterParagraph>
+            <LineSpacingStyle>SpaceExactly</LineSpacingStyle>
+            <FirstLineIndent>-100</FirstLineIndent>
+            <LeftIndent>100</LeftIndent>
+            <ParagraphListStyle>ListNumberStyleSimpChinNum1</ParagraphListStyle>
+         </Style>
+         <Style Index="12">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <SpacingAfterParagraph>41</SpacingAfterParagraph>
+            <LineSpacingStyle>SpaceExactly</LineSpacingStyle>
+            <Align>Center</Align>
+            <LeftIndent>93</LeftIndent>
+         </Style>
+         <Style Index="13">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeftColor>#FFFFFF</BorderLeftColor>
+            <BorderTopColor>#FFFFFF</BorderTopColor>
+            <BorderRightColor>#FFFFFF</BorderRightColor>
+            <BorderBottomColor>#FFFFFF</BorderBottomColor>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingRight>15</PaddingRight>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="14">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeftColor>#FFFFFF</BorderLeftColor>
+            <BorderTopColor>#FFFFFF</BorderTopColor>
+            <BorderRightColor>#FFFFFF</BorderRightColor>
+            <BorderBottomColor>#FFFFFF</BorderBottomColor>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingRight>15</PaddingRight>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+      </Styles>
+   </ContentStyles>
+   <Info>
+      <LicenseText>明天医网:深圳市人民医院</LicenseText>
+      <CreationTime>1980-01-01T00:00:00</CreationTime>
+      <LastModifiedTime>2020-06-12T16:18:54.0647353+08:00</LastModifiedTime>
+      <LastPrintTime>1980-01-01T00:00:00</LastPrintTime>
+      <Operator>DCSoft.Writer Version:1.2020.6.2</Operator>
+      <NumOfPage>1</NumOfPage>
+   </Info>
+   <BodyText>
+
+甲方（患者）：     乡（镇） 村 
+乙方（定点医疗机构）：湖北省中医院
+    为深入贯彻落实医药卫生体制改革精神，有效缓解林周农牧民“看病难，看病贵”问题，更好地向群众提供优质、安全、价廉的医疗卫生服务，执行《林周县县级医疗机构“先诊疗后结算”实施方案》{林政发（2013）52号文件}，经甲乙双方同意签订本协议。
+甲方住院期间，乙方不向甲方收取住院押金。甲方在办理住院手续时须向乙方提交林周县农牧区医疗家庭账户、身份证（或户口本）原件（复印件）等证明。
+甲方在住院期间，乙方每天须向甲方提供住院费用一日清单。
+甲方在住院期间，对病情所需采用医保或农牧区医疗规定以外的自费检查措施或药品，乙方有告知甲方的义务，征求甲方意见并同意后，双方签署知情同意书。
+乙方须在甲方出院前1-2天内告知甲方其住院总费用和个人应承担的住院费用，以备甲方筹措住院费用。
+甲方出院时，应向乙方一次性交清住院期间个人应承担的医药费用（个人承担的医疗费用25%包括所有一次性耗材费）
+如甲方故意或恶意拖欠应付住院费用，记入医院黑名单，同时将患者所在乡镇纳入医院黑名单，不予执行“先诊疗后结算”的政策，并上报县卫生局等有关部门，向人民法院提起诉讼，追究甲方相关法律责任。
+本协议一式两份，甲乙双方各持一份。
+本协议自签订之日生效。
+
+甲方签字（章）：                          乙方盖章：
+ 
+
+                                              年        月        日
+</BodyText>
+   <LocalConfig />
+   <PageSettings />
+</XTextDocument>

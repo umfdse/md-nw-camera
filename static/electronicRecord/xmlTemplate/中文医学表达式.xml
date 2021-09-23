@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XTextDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" EditorVersionString="1.2019.1.29">
+   <Attributes />
+   <AutoFixTextMode>None</AutoFixTextMode>
+   <XElements>
+      <Element xsi:type="XTextHeader">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XParagraphFlag" StyleIndex="0" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextBody">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XNewMedicalExpression">
+               <ID>exp1</ID>
+               <PropertyExpressions />
+               <Name />
+               <Text>Value1=初潮年龄,Value2=经期,Value3=周期,Value4=末次月经</Text>
+               <Values>
+                  <Value Name="Value1">初潮年龄</Value>
+                  <Value Name="Value2">经期</Value>
+                  <Value Name="Value3">周期</Value>
+                  <Value Name="Value4">末次月经</Value>
+               </Values>
+               <Width>565.6249</Width>
+               <Height>151.868744</Height>
+            </Element>
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextFooter">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements />
+      </Element>
+   </XElements>
+   <Parameters />
+   <FileName>C:\Users\DCTAO\Desktop\中文医学表达式.xml</FileName>
+   <FileFormat>XML</FileFormat>
+   <UserHistories />
+   <ContentStyles>
+      <Default xsi:type="DocumentContentStyle">
+         <FontName>宋体</FontName>
+         <FontSize>12</FontSize>
+      </Default>
+      <Styles>
+         <Style Index="0">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Center</Align>
+         </Style>
+      </Styles>
+   </ContentStyles>
+   <RepeatedImages />
+   <ControlOptionsForDebug>
+      <RuleVisible>false</RuleVisible>
+      <UserInfo>
+         <ID>511</ID>
+         <Name>上官海燕</Name>
+         <PermissionLevel>0</PermissionLevel>
+      </UserInfo>
+      <DocumentOptions>
+         <SecurityOptions>
+            <AutoEnablePermissionWhenUserLogin>false</AutoEnablePermissionWhenUserLogin>
+            <TrackVisibleLevel0>
+               <UnderLineColorString>#ADD8E6</UnderLineColorString>
+               <DeleteLineColorString>#FF7F50</DeleteLineColorString>
+            </TrackVisibleLevel0>
+            <TrackVisibleLevel1 />
+            <TrackVisibleLevel2>
+               <BackgroundColorString>#FFFFE0</BackgroundColorString>
+               <UnderLineColorNum>2</UnderLineColorNum>
+               <DeleteLineNum>2</DeleteLineNum>
+            </TrackVisibleLevel2>
+            <TrackVisibleLevel3>
+               <BackgroundColorString>#FFFFE0</BackgroundColorString>
+               <UnderLineColorNum>2</UnderLineColorNum>
+               <DeleteLineNum>2</DeleteLineNum>
+            </TrackVisibleLevel3>
+         </SecurityOptions>
+         <ViewOptions>
+            <NewInputContentUnderlineColor />
+            <NewInputContentUnderlineColorValue>#00000000</NewInputContentUnderlineColorValue>
+            <AdornTextBackColorValue>#64808080</AdornTextBackColorValue>
+            <FieldHoverBackColorValue>#FFFFFF</FieldHoverBackColorValue>
+            <TagColorForNormalFieldValue>#FF0000</TagColorForNormalFieldValue>
+         </ViewOptions>
+         <BehaviorOptions>
+            <ParagraphFlagFollowTableOrSection>true</ParagraphFlagFollowTableOrSection>
+            <ValidateUserIDWhenEditDeleteComment>true</ValidateUserIDWhenEditDeleteComment>
+            <InsertDocumentWithCheckMRID>PromptForbitWhenFail</InsertDocumentWithCheckMRID>
+         </BehaviorOptions>
+         <EditOptions>
+            <GridLinePreviewText>DCWriter是南京都昌信息科技有限公司自主研发的专业的电子病历文档编辑器。</GridLinePreviewText>
+         </EditOptions>
+      </DocumentOptions>
+      <Font>
+         <Size>12</Size>
+      </Font>
+      <HeaderFooterFlagVisible>None</HeaderFooterFlagVisible>
+      <JumpPrint />
+      <PageTitlePosition>BottomRight</PageTitlePosition>
+      <Readonly>true</Readonly>
+   </ControlOptionsForDebug>
+   <GlobalJavaScriptReferences />
+   <Info>
+      <LicenseText>明天医网:深圳市人民医院</LicenseText>
+      <CreationTime>1980-01-01T00:00:00</CreationTime>
+      <LastModifiedTime>2020-06-12T13:20:52.8267598+08:00</LastModifiedTime>
+      <LastPrintTime>1980-01-01T00:00:00</LastPrintTime>
+      <Operator>DCSoft.Writer Version:1.2019.1.29</Operator>
+      <NumOfPage>1</NumOfPage>
+   </Info>
+   <BodyText>Value1=初潮年龄,Value2=经期,Value3=周期,Value4=末次月经</BodyText>
+   <Comments />
+   <LocalConfig />
+   <PageSettings />
+</XTextDocument>

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>测试页面</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="http://192.168.110.124/DemoDocumentImageService.aspx?js=1"></script>
+    <!-- <script type="text/javascript" src="{{staticPath}}/js/common/jquery-2.2.3.min.js"></script> -->
+    <script type="text/javascript" src="jQuery/jquery-2.2.3.min.js"></script>
+</head>
+<!--gif图-->
+
+<body>
+	<div id="myWriterControl" style="width:100%; border:2px solid black; height:1000px; border-radius:5px"
+		ContentRenderMode="NormalHtmlEditable" WorkspaceBackColorString="#B1CAEB"
+		WorkspaceBackgroundImage="Workspace-Background.jpg"
+		ServicePageURL="http://192.168.110.124/DemoDocumentImageService.aspx" UseClassAttribute="true"
+		HeightCompress="true" PrintBackgroundText="true" PreserveBackgroundTextWhenPrint="true"
+        BackgroundTextOutputMode="Underline" ImageDataEmbedInHtml="true" ServerSleepForDebug="0" AllowCopy="true">
+      <!-- <label>用户名<input type="text" name='username' placeholder="请输入用户名"></label> -->
+      <!-- <label>用户名<input type="password" name='password'placeholder='请输入密码'></label> -->
+	</div>
+	<script>
+
+		// 获得控件容器元素
+		var ctl = document.getElementById("myWriterControl");
+		// 绑定控件
+		BindingDCWriterClientControl(ctl);
+		// 创建编辑器框架
+		ctl.BuildFrame(function () {
+        });
+        var opts = {
+           PaperKind: "Custom",//自定义
+           PaperWidth: "210",//宽度
+           PaperHeight: "297",//高度
+           Landscape: "false",//横向，纵向
+           ViewLeftMargin: "60",//左边距 单位 像素
+           ViewRightMargin: "60",//右边距 单位 像素
+           ViewTopMargin: "300",//上边距 单位 像素
+           ViewBottomMargin: "300",//下边距 单位 像素
+           ViewHeaderDistance: "50",//页眉位置 单位百分之一英寸
+           ViewFooterDistance: "10"//页脚位置 单位百分之一英寸
+		   }
+		   var ctl = document.getElementById("myWriterControl")
+			ctl.ChangeDocumentSettings(opts);
+	</script>
+</body>
+
+</html>

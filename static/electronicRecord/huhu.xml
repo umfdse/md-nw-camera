@@ -1,0 +1,3182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XTextDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" EditorVersionString="0.0.0.0">
+   <Attributes>
+      <Attribute>
+         <Name>DCLocalDataSource</Name>
+         <Value>&lt;DataSourceDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="DataSource" Name="DataSource" Guid="a9b52353-c3e2-4b05-a34c-d72ccb9ba9c0" Title=""&gt;&lt;Parameters /&gt;&lt;Nodes /&gt;&lt;/DataSourceDocument&gt;</Value>
+      </Attribute>
+   </Attributes>
+   <XElements>
+      <Element xsi:type="XTextHeader">
+         <Attributes />
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XInputField" StyleIndex="5">
+               <Attributes>
+                  <Attribute>
+                     <Name>DCMetadata</Name>
+                     <Value>DE08.10.013.00</Value>
+                  </Attribute>
+               </Attributes>
+               <ID>DE08.10.013.00</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>hisPatient</DataSource>
+                  <BindingPath>hospName</BindingPath>
+                  <Handled>true</Handled>
+               </ValueBinding>
+               <XElements />
+               <BorderElementColor />
+               <EventExpressions />
+               <Name>DE08.10.013.00</Name>
+               <InnerValue />
+               <BackgroundText>医疗机构</BackgroundText>
+               <LastSelectedListItems />
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="0" />
+            <Element xsi:type="XString" StyleIndex="6">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>入院病人护理评估单</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="0" />
+            <Element xsi:type="XString" StyleIndex="1">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>姓名：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes>
+                  <Attribute>
+                     <Name>DCMetadata</Name>
+                     <Value>DE02.01.039.00</Value>
+                  </Attribute>
+               </Attributes>
+               <ID>DE02.01.039.00</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>mrsPatient</DataSource>
+                  <BindingPath>patientName</BindingPath>
+                  <Handled>true</Handled>
+               </ValueBinding>
+               <XElements />
+               <BorderElementColor />
+               <SpecifyWidth>236.220474</SpecifyWidth>
+               <EventExpressions />
+               <Name>DE02.01.039.00</Name>
+               <InnerValue />
+               <BackgroundText>姓名</BackgroundText>
+               <LastSelectedListItems />
+            </Element>
+            <Element xsi:type="XString" StyleIndex="1">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>科室：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes>
+                  <Attribute>
+                     <Name>DCMetadata</Name>
+                     <Value>DE08.10.026.00</Value>
+                  </Attribute>
+               </Attributes>
+               <ID>DE08.10.026.00</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>hisPatient</DataSource>
+                  <BindingPath>inpDeptName</BindingPath>
+                  <Handled>true</Handled>
+               </ValueBinding>
+               <XElements />
+               <BorderElementColor />
+               <SpecifyWidth>366.141724</SpecifyWidth>
+               <EventExpressions />
+               <Name>DE08.10.026.00</Name>
+               <InnerValue />
+               <BackgroundText>入院科室</BackgroundText>
+               <LastSelectedListItems />
+            </Element>
+            <Element xsi:type="XString" StyleIndex="1">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>   床号：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes>
+                  <Attribute>
+                     <Name>DCMetadata</Name>
+                     <Value>DE01.00.026.00</Value>
+                  </Attribute>
+               </Attributes>
+               <ID>DE01.00.026.00</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>hisPatient</DataSource>
+                  <BindingPath>bedNumber</BindingPath>
+                  <Handled>true</Handled>
+               </ValueBinding>
+               <XElements />
+               <BorderElementColor />
+               <SpecifyWidth>141.732285</SpecifyWidth>
+               <EventExpressions />
+               <Name>DE01.00.026.00</Name>
+               <InnerValue />
+               <BackgroundText>床号</BackgroundText>
+               <LastSelectedListItems />
+            </Element>
+            <Element xsi:type="XString" StyleIndex="1">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>   病案号：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes>
+                  <Attribute>
+                     <Name>DCMetadata</Name>
+                     <Value>DE01.00.004.00</Value>
+                  </Attribute>
+               </Attributes>
+               <ID>DE01.00.004.00</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>hisPatient</DataSource>
+                  <BindingPath>medicalNumber</BindingPath>
+                  <Handled>true</Handled>
+               </ValueBinding>
+               <XElements />
+               <BorderElementColor />
+               <SpecifyWidth>141.732285</SpecifyWidth>
+               <EventExpressions />
+               <Name>DE01.00.004.00</Name>
+               <InnerValue />
+               <BackgroundText>病案号</BackgroundText>
+               <LastSelectedListItems />
+            </Element>
+            <Element xsi:type="XString" StyleIndex="1">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>  次数：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes>
+                  <Attribute>
+                     <Name>DCMetadata</Name>
+                     <Value>DE02.10.090.00</Value>
+                  </Attribute>
+               </Attributes>
+               <ID>DE02.10.090.00</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>hisPatient</DataSource>
+                  <BindingPath>inpTimes</BindingPath>
+                  <BindingPathForText />
+                  <Handled>true</Handled>
+               </ValueBinding>
+               <XElements />
+               <BorderElementColor />
+               <SpecifyWidth>141.732285</SpecifyWidth>
+               <EventExpressions />
+               <Name>DE02.10.090.00</Name>
+               <InnerValue />
+               <BackgroundText>住院次</BackgroundText>
+               <LastSelectedListItems />
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="2" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextBody">
+         <Attributes />
+         <ID>divDocumentBody_0</ID>
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XString" StyleIndex="9">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>一、一般资料</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>性别：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes>
+                  <Attribute>
+                     <Name>DCMetadata</Name>
+                     <Value>DE02.01.040.00</Value>
+                  </Attribute>
+               </Attributes>
+               <ID>DE02.01.040.00</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>mrsPatient</DataSource>
+                  <BindingPath>sexName</BindingPath>
+                  <Handled>true</Handled>
+               </ValueBinding>
+               <XElements />
+               <Deleteable>false</Deleteable>
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <Name>DE02.01.040.00</Name>
+               <BackgroundText>性别</BackgroundText>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;年龄：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes>
+                  <Attribute>
+                     <Name>DCMetadata</Name>
+                     <Value>DE02.01.026.00</Value>
+                  </Attribute>
+               </Attributes>
+               <ID>DE02.01.026.00</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>mrsPatient</DataSource>
+                  <BindingPath>age</BindingPath>
+                  <Handled>true</Handled>
+               </ValueBinding>
+               <XElements />
+               <Deleteable>false</Deleteable>
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <Name>DE02.01.026.00</Name>
+               <BackgroundText>年龄</BackgroundText>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;职业：&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;民族：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes>
+                  <Attribute>
+                     <Name>DCMetadata</Name>
+                     <Value>DE02.01.025.00</Value>
+                  </Attribute>
+               </Attributes>
+               <ID>DE02.01.025.00</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>mrsPatient</DataSource>
+                  <BindingPath>nationName</BindingPath>
+                  <Handled>true</Handled>
+               </ValueBinding>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <Name>DE02.01.025.00</Name>
+               <BackgroundText>民族</BackgroundText>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;籍贯：</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>文化程度：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>radio1</ID>
+               <PropertyExpressions />
+               <Name>1</Name>
+               <Caption>文盲</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>1</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo2</ID>
+               <PropertyExpressions />
+               <Name>1</Name>
+               <Caption>小学</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>1</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo3</ID>
+               <PropertyExpressions />
+               <Name>1</Name>
+               <Caption>初中</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>1</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo4</ID>
+               <PropertyExpressions />
+               <Name>1</Name>
+               <Caption>高中</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>1</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo5</ID>
+               <PropertyExpressions />
+               <Name>1</Name>
+               <Caption>中专</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>1</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo6</ID>
+               <PropertyExpressions />
+               <Name>1</Name>
+               <Caption>大专</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>1</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo7</ID>
+               <PropertyExpressions />
+               <Name>1</Name>
+               <Caption>大学及以上</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>1</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>家庭状况：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo8</ID>
+               <PropertyExpressions />
+               <Name>2</Name>
+               <Caption>未婚</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>2</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo9</ID>
+               <PropertyExpressions />
+               <Name>2</Name>
+               <Caption>已婚</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>2</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo10</ID>
+               <PropertyExpressions />
+               <Name>2</Name>
+               <Caption>离婚</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>2</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo11</ID>
+               <PropertyExpressions />
+               <Name>2</Name>
+               <Caption>再婚</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>2</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo12</ID>
+               <PropertyExpressions />
+               <Name>2</Name>
+               <Caption>丧偶</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>2</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;子女：</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>checkbox1</ID>
+               <PropertyExpressions />
+               <Caption>男</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>（</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes />
+               <ID>field69</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>118.1102</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>）&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk2</ID>
+               <PropertyExpressions />
+               <Caption>女</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>（</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes />
+               <ID>field70</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>118.1102</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>）</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>医疗费用：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo13</ID>
+               <PropertyExpressions />
+               <Name>3</Name>
+               <Caption>省医保</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>3</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo14</ID>
+               <PropertyExpressions />
+               <Name>3</Name>
+               <Caption>市/区医保</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>3</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo15</ID>
+               <PropertyExpressions />
+               <Name>3</Name>
+               <Caption>异地医保</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>3</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo16</ID>
+               <PropertyExpressions />
+               <Name>3</Name>
+               <Caption>自费</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>3</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo17</ID>
+               <PropertyExpressions />
+               <Name>3</Name>
+               <Caption>其他</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>3</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field13</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>家庭住址：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field14</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>826.7717</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;邮政编码：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field15</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements>
+                  <Element xsi:type="XString" StyleIndex="9">
+                     <XElements xsi:nil="true" />
+                     <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                     <Text>222222222222222222222222221111111111111111111111111111111111111112222222222222222222222222222222222222222222222222222333333333333333333333333333331122</Text>
+                  </Element>
+               </XElements>
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>236.2205</SpecifyWidth>
+               <InnerValue>2</InnerValue>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;电话:</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field16</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements>
+                  <Element xsi:type="XString" StyleIndex="9">
+                     <XElements xsi:nil="true" />
+                     <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                     <Text>222222222222</Text>
+                  </Element>
+               </XElements>
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+               <InnerValue>2</InnerValue>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>联系人：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field17</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;与患者关系：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field18</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="10">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>联系电话：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field19</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="10">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>入院诊断：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes>
+                  <Attribute>
+                     <Name>DCMetadata</Name>
+                     <Value>DE05.01.025.00</Value>
+                  </Attribute>
+               </Attributes>
+               <ID>DE05.01.025.00</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>checkIn</DataSource>
+                  <BindingPath>hisDiagnosis</BindingPath>
+               </ValueBinding>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>1653.543</SpecifyWidth>
+               <Name>DE05.01.025.00</Name>
+               <BackgroundText>初步诊断（入院诊断）</BackgroundText>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>入院日期及时间：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes>
+                  <Attribute>
+                     <Name>DCMetadata</Name>
+                     <Value>DE06.00.092.00</Value>
+                  </Attribute>
+               </Attributes>
+               <ID>DE06.00.092.00</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <ValueBinding>
+                  <DataSource>hisPatient</DataSource>
+                  <BindingPath>entryTime</BindingPath>
+               </ValueBinding>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+               <Name>DE06.00.092.00</Name>
+               <DisplayFormat>
+                  <Style>DateTime</Style>
+                  <Format>yyyy-MM-dd HH:mm</Format>
+               </DisplayFormat>
+               <BackgroundText>入科时间</BackgroundText>
+               <FieldSettings>
+                  <EditStyle>DateTime</EditStyle>
+                  <ListItems />
+               </FieldSettings>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="10">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>病员来自：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo18</ID>
+               <PropertyExpressions />
+               <Name>4</Name>
+               <Caption>门诊</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>4</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo19</ID>
+               <PropertyExpressions />
+               <Name>4</Name>
+               <Caption>急诊</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>4</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo20</ID>
+               <PropertyExpressions />
+               <Name>4</Name>
+               <Caption>其它</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>4</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field60</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>入院方式：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo21</ID>
+               <PropertyExpressions />
+               <Name>5</Name>
+               <Caption>步行</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>5</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo22</ID>
+               <PropertyExpressions />
+               <Name>5</Name>
+               <Caption>扶助</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>5</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo23</ID>
+               <PropertyExpressions />
+               <Name>5</Name>
+               <Caption>轮椅</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>5</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo24</ID>
+               <PropertyExpressions />
+               <Name>5</Name>
+               <Caption>平车</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>5</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo25</ID>
+               <PropertyExpressions />
+               <Name>5</Name>
+               <Caption>背送</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>5</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo26</ID>
+               <PropertyExpressions />
+               <Name>5</Name>
+               <Caption>抱送</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>5</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo27</ID>
+               <PropertyExpressions />
+               <Name>5</Name>
+               <Caption>其它</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>5</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field61</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>语种：</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>checkbox3</ID>
+               <PropertyExpressions />
+               <Caption>汉语</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk4</ID>
+               <PropertyExpressions />
+               <Caption>英语</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk5</ID>
+               <PropertyExpressions />
+               <Caption>日语</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk6</ID>
+               <PropertyExpressions />
+               <Caption>韩语</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk7</ID>
+               <PropertyExpressions />
+               <Caption>其它</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <Checked>true</Checked>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field62</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>沟通能力：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo28</ID>
+               <PropertyExpressions />
+               <Name>6</Name>
+               <Caption>正常</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>6</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo29</ID>
+               <PropertyExpressions />
+               <Name>6</Name>
+               <Caption>体语</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>6</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo30</ID>
+               <PropertyExpressions />
+               <Name>6</Name>
+               <Caption>含糊不清</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>6</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo31</ID>
+               <PropertyExpressions />
+               <Name>6</Name>
+               <Caption>不能表达</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>6</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>对疾病认知程度：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo32</ID>
+               <PropertyExpressions />
+               <Name>7</Name>
+               <Caption>知道</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>7</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo33</ID>
+               <PropertyExpressions />
+               <Name>7</Name>
+               <Caption>知道一些</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>7</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo34</ID>
+               <PropertyExpressions />
+               <Name>7</Name>
+               <Caption>不知道</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>7</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>家庭/单位对病人健康：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo35</ID>
+               <PropertyExpressions />
+               <Name>8</Name>
+               <Caption>很重视</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>8</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo36</ID>
+               <PropertyExpressions />
+               <Name>8</Name>
+               <Caption>满足</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>8</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo37</ID>
+               <PropertyExpressions />
+               <Name>8</Name>
+               <Caption>不能满足</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>8</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo38</ID>
+               <PropertyExpressions />
+               <Name>8</Name>
+               <Caption>忽视</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>8</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo39</ID>
+               <PropertyExpressions />
+               <Name>8</Name>
+               <Caption>其它</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>8</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field22</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString" StyleIndex="9">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>二、健康评估</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>既往病史：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo40</ID>
+               <PropertyExpressions />
+               <Name>9</Name>
+               <Caption>无</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>9</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo41</ID>
+               <PropertyExpressions />
+               <Name>9</Name>
+               <Caption>有：</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>9</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field63</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="10">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>家族史：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo42</ID>
+               <PropertyExpressions />
+               <Name>10</Name>
+               <Caption>无</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>10</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo43</ID>
+               <PropertyExpressions />
+               <Name>10</Name>
+               <Caption>有：</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>10</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field64</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>过敏史：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo44</ID>
+               <PropertyExpressions />
+               <Name>11</Name>
+               <Caption>无</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>11</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo45</ID>
+               <PropertyExpressions />
+               <Name>11</Name>
+               <Caption>有</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>11</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;过敏药物：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field23</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>944.8819</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;过敏食物：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field24</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="10">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>药物依赖：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field25</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>精神状态：</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>checkbox8</ID>
+               <PropertyExpressions />
+               <Caption>正常</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk9</ID>
+               <PropertyExpressions />
+               <Caption>焦虑</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk10</ID>
+               <PropertyExpressions />
+               <Caption>紧张</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk11</ID>
+               <PropertyExpressions />
+               <Caption>沮丧</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk12</ID>
+               <PropertyExpressions />
+               <Caption>易激动</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk13</ID>
+               <PropertyExpressions />
+               <Caption>忧伤</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk14</ID>
+               <PropertyExpressions />
+               <Caption>恐惧</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox">
+               <ID>chk15</ID>
+               <PropertyExpressions />
+               <Caption>其它</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <CheckedValue />
+               <VisualStyle>SystemDefault</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field65</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>听力：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo46</ID>
+               <PropertyExpressions />
+               <Name>12</Name>
+               <Caption>清晰</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>12</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo47</ID>
+               <PropertyExpressions />
+               <Name>12</Name>
+               <Caption>下降</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>12</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo48</ID>
+               <PropertyExpressions />
+               <Name>12</Name>
+               <Caption>耳聋</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>12</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo49</ID>
+               <PropertyExpressions />
+               <Name>12</Name>
+               <Caption>助听器</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>12</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo50</ID>
+               <PropertyExpressions />
+               <Name>12</Name>
+               <Caption>其它</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>12</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field27</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>饮食：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo51</ID>
+               <PropertyExpressions />
+               <Name>13</Name>
+               <Caption>正常</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>13</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo52</ID>
+               <PropertyExpressions />
+               <Name>13</Name>
+               <Caption>下降</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>13</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo53</ID>
+               <PropertyExpressions />
+               <Name>13</Name>
+               <Caption>亢进</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>13</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;嗜好：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field28</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>小便：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo54</ID>
+               <PropertyExpressions />
+               <Name>14</Name>
+               <Caption>正常</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>14</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo55</ID>
+               <PropertyExpressions />
+               <Name>14</Name>
+               <Caption>失禁</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>14</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo56</ID>
+               <PropertyExpressions />
+               <Name>14</Name>
+               <Caption>尿频</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>14</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo57</ID>
+               <PropertyExpressions />
+               <Name>14</Name>
+               <Caption>尿潴留</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>14</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo58</ID>
+               <PropertyExpressions />
+               <Name>14</Name>
+               <Caption>其它</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>14</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field29</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>大便：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo59</ID>
+               <PropertyExpressions />
+               <Name>15</Name>
+               <Caption>正常</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>15</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo60</ID>
+               <PropertyExpressions />
+               <Name>15</Name>
+               <Caption>腹泻</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>15</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo61</ID>
+               <PropertyExpressions />
+               <Name>15</Name>
+               <Caption>便秘</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>15</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo62</ID>
+               <PropertyExpressions />
+               <Name>15</Name>
+               <Caption>失禁</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>15</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo63</ID>
+               <PropertyExpressions />
+               <Name>15</Name>
+               <Caption>辅助药物</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>15</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>肢体活动：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo64</ID>
+               <PropertyExpressions />
+               <Name>16</Name>
+               <Caption>正常</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>16</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo65</ID>
+               <PropertyExpressions />
+               <Name>16</Name>
+               <Caption>扶行</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>16</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo66</ID>
+               <PropertyExpressions />
+               <Name>16</Name>
+               <Caption>拐杖</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>16</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo67</ID>
+               <PropertyExpressions />
+               <Name>16</Name>
+               <Caption>轮椅</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>16</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo68</ID>
+               <PropertyExpressions />
+               <Name>16</Name>
+               <Caption>无法行动</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>16</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo69</ID>
+               <PropertyExpressions />
+               <Name>16</Name>
+               <Caption>其它</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>16</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field30</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>睡眠情况：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo70</ID>
+               <PropertyExpressions />
+               <Name>17</Name>
+               <Caption>正常</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>17</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo71</ID>
+               <PropertyExpressions />
+               <Name>17</Name>
+               <Caption>异常</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>17</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field66</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>177.1654</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>小时/天&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo72</ID>
+               <PropertyExpressions />
+               <Name>17</Name>
+               <Caption>入睡困难</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>17</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo73</ID>
+               <PropertyExpressions />
+               <Name>17</Name>
+               <Caption>多梦</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>17</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo74</ID>
+               <PropertyExpressions />
+               <Name>17</Name>
+               <Caption>易醒</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>17</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo75</ID>
+               <PropertyExpressions />
+               <Name>17</Name>
+               <Caption>失眠</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>17</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo76</ID>
+               <PropertyExpressions />
+               <Name>17</Name>
+               <Caption>服镇静剂</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>17</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>吸烟：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo77</ID>
+               <PropertyExpressions />
+               <Name>18</Name>
+               <Caption>不吸</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>18</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo78</ID>
+               <PropertyExpressions />
+               <Name>18</Name>
+               <Caption>吸烟</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>18</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>每日</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field67</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>118.1102</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>支，已吸烟</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field67637038131918021324</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>118.1102</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>年&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo79</ID>
+               <PropertyExpressions />
+               <Name>18</Name>
+               <Caption>已戒烟</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>18</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>饮酒：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo80</ID>
+               <PropertyExpressions />
+               <Name>19</Name>
+               <Caption>不饮</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>19</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo81</ID>
+               <PropertyExpressions />
+               <Name>19</Name>
+               <Caption>偶尔</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>19</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo82</ID>
+               <PropertyExpressions />
+               <Name>19</Name>
+               <Caption>大量</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>19</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>，每日</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field68</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>118.1102</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>两，已饮</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field68637038132739343459</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>118.1102</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>年&#x2002;&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo83</ID>
+               <PropertyExpressions />
+               <Name>19</Name>
+               <Caption>已戒酒</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>19</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>体重：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo84</ID>
+               <PropertyExpressions />
+               <Name>20</Name>
+               <Caption>无改变</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>20</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo85</ID>
+               <PropertyExpressions />
+               <Name>20</Name>
+               <Caption>增加</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>20</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo86</ID>
+               <PropertyExpressions />
+               <Name>20</Name>
+               <Caption>减少</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>20</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field36</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>118.1102</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>kg/</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field37</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>118.1102</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>月，原因</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field38</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>疼痛：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo87</ID>
+               <PropertyExpressions />
+               <Name>21</Name>
+               <Caption>无</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>21</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo88</ID>
+               <PropertyExpressions />
+               <Name>21</Name>
+               <Caption>有</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>21</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>（部位</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field39</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>944.8819</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>）</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString" StyleIndex="9">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>全身皮肤是否完好：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo89</ID>
+               <PropertyExpressions />
+               <Name>22</Name>
+               <Caption>是</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>22</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="9">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo90</ID>
+               <PropertyExpressions />
+               <Name>22</Name>
+               <Caption>否</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>22</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="9">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;是否压力性损伤高风险患者：</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo91</ID>
+               <PropertyExpressions />
+               <Name>23</Name>
+               <Caption>是</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>23</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="9">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XTextRadioBox">
+               <ID>rdo91637038135240782854</ID>
+               <PropertyExpressions />
+               <Name>23</Name>
+               <Caption>否</Caption>
+               <Width>0</Width>
+               <Height>0</Height>
+               <GroupName>23</GroupName>
+               <ControlStyle>RadioBox</ControlStyle>
+               <CheckedValue />
+               <VisualStyle>CheckBox</VisualStyle>
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="9">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>生命体征：体温</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="8">
+               <Attributes />
+               <ID>field56</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>177.1654</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>℃&#x2002;&#x2002;脉搏</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="8">
+               <Attributes />
+               <ID>field57</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>177.1654</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>次/分&#x2002;&#x2002;呼吸</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="8">
+               <Attributes />
+               <ID>field58</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>177.1654</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>次/分&#x2002;&#x2002;血压</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="8">
+               <Attributes />
+               <ID>field59</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>236.2205</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>mmHg</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>入院视力：VOD：裸眼</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field52</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>236.2205</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;小孔</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field53</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>236.2205</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;近视力</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field54</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>236.2205</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;戴镜视力</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field55</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>236.2205</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;VOS：裸眼</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field48</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>236.2205</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;小孔</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field49</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>236.2205</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;近视力</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field50</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>236.2205</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="10">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>戴镜视力</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field51</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>236.2205</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString" StyleIndex="9">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>评估护士：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field10</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="9">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>患者签名：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>field11</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <SpecifyWidth>354.3307</SpecifyWidth>
+            </Element>
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="9">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;评估日期：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="7">
+               <Attributes />
+               <ID>datetime12</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <DisplayFormat>
+                  <Style>DateTime</Style>
+                  <Format>yyyy年MM月dd日 HH时mm分</Format>
+               </DisplayFormat>
+               <BackgroundText>yyyy年MM月dd日 HH时mm分</BackgroundText>
+               <FieldSettings>
+                  <EditStyle>DateTimeWithoutSecond</EditStyle>
+                  <ListItems />
+               </FieldSettings>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+            <Element xsi:type="XString">
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>（该表应在患者入院当天内完成，请在合适项目上打“√”或填写）</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="12" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextFooter">
+         <Attributes />
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XPageInfo" StyleIndex="1">
+               <PropertyExpressions />
+               <Width>100</Width>
+               <AutoHeight>true</AutoHeight>
+               <Height>54.89257</Height>
+               <FormatString />
+               <SpecifyPageIndexTextList />
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="4" />
+         </XElements>
+      </Element>
+   </XElements>
+   <ScriptText />
+   <SerializeParameterValue>true</SerializeParameterValue>
+   <Parameters>
+      <Parameter Name="patient" ValueTypeFullName="System.Data.DataTable,System.Data">
+         <SerializeValue TypeName="System.Data.DataTable,System.Data" Binary="true">AAEAAAD/////AQAAAAAAAAAMAgAAAE5TeXN0ZW0uRGF0YSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABVTeXN0ZW0uRGF0YS5EYXRhVGFibGUDAAAAGURhdGFUYWJsZS5SZW1vdGluZ1ZlcnNpb24JWG1sU2NoZW1hC1htbERpZmZHcmFtAwEBDlN5c3RlbS5WZXJzaW9uAgAAAAkDAAAABgQAAADZBTw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi0xNiI/Pg0KPHhzOnNjaGVtYSB4bWxucz0iIiB4bWxuczp4cz0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp4bWwtbXNkYXRhIj4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iVGFibGUxIj4NCiAgICA8eHM6Y29tcGxleFR5cGU+DQogICAgICA8eHM6c2VxdWVuY2U+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9Im5hbWUiIHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9ImFnZSIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgIDwveHM6c2VxdWVuY2U+DQogICAgPC94czpjb21wbGV4VHlwZT4NCiAgPC94czplbGVtZW50Pg0KICA8eHM6ZWxlbWVudCBuYW1lPSJ0bXBEYXRhU2V0IiBtc2RhdGE6SXNEYXRhU2V0PSJ0cnVlIiBtc2RhdGE6TWFpbkRhdGFUYWJsZT0iVGFibGUxIiBtc2RhdGE6VXNlQ3VycmVudExvY2FsZT0idHJ1ZSI+DQogICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgPHhzOmNob2ljZSBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiAvPg0KICAgIDwveHM6Y29tcGxleFR5cGU+DQogIDwveHM6ZWxlbWVudD4NCjwveHM6c2NoZW1hPgYFAAAA6QQ8ZGlmZmdyOmRpZmZncmFtIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp4bWwtbXNkYXRhIiB4bWxuczpkaWZmZ3I9InVybjpzY2hlbWFzLW1pY3Jvc29mdC1jb206eG1sLWRpZmZncmFtLXYxIj4NCiAgPHRtcERhdGFTZXQ+DQogICAgPFRhYmxlMSBkaWZmZ3I6aWQ9IlRhYmxlMTEiIG1zZGF0YTpyb3dPcmRlcj0iMCIgZGlmZmdyOmhhc0NoYW5nZXM9Imluc2VydGVkIj4NCiAgICAgIDxuYW1lPui1teWFrTwvbmFtZT4NCiAgICAgIDxhZ2U+OTk8L2FnZT4NCiAgICA8L1RhYmxlMT4NCiAgICA8VGFibGUxIGRpZmZncjppZD0iVGFibGUxMiIgbXNkYXRhOnJvd09yZGVyPSIxIiBkaWZmZ3I6aGFzQ2hhbmdlcz0iaW5zZXJ0ZWQiPg0KICAgICAgPG5hbWU+546L5LqUPC9uYW1lPg0KICAgICAgPGFnZT4yMjwvYWdlPg0KICAgIDwvVGFibGUxPg0KICAgIDxUYWJsZTEgZGlmZmdyOmlkPSJUYWJsZTEzIiBtc2RhdGE6cm93T3JkZXI9IjIiIGRpZmZncjpoYXNDaGFuZ2VzPSJpbnNlcnRlZCI+DQogICAgICA8bmFtZT7mnY7po5I8L25hbWU+DQogICAgICA8YWdlPjQ0PC9hZ2U+DQogICAgPC9UYWJsZTE+DQogIDwvdG1wRGF0YVNldD4NCjwvZGlmZmdyOmRpZmZncmFtPgQDAAAADlN5c3RlbS5WZXJzaW9uBAAAAAZfTWFqb3IGX01pbm9yBl9CdWlsZAlfUmV2aXNpb24AAAAACAgICAIAAAAAAAAA//////////8L</SerializeValue>
+      </Parameter>
+   </Parameters>
+   <FileName>File/入院病人护理评估单.xml</FileName>
+   <FileFormat>xml</FileFormat>
+   <UserHistories />
+   <ContentStyles>
+      <Default xsi:type="DocumentContentStyle">
+         <FontName>宋体</FontName>
+         <FontSize>10.5</FontSize>
+      </Default>
+      <Styles>
+         <Style Index="0">
+            <FontName>宋体</FontName>
+            <FontSize>10.5</FontSize>
+            <LineSpacingStyle>SpaceSpecify</LineSpacingStyle>
+            <LineSpacing>83.3333359</LineSpacing>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="1">
+            <FontName>宋体</FontName>
+            <FontSize>10.5</FontSize>
+         </Style>
+         <Style Index="2">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <LineSpacingStyle>SpaceSpecify</LineSpacingStyle>
+            <LineSpacing>83.3333359</LineSpacing>
+         </Style>
+         <Style Index="3">
+            <FontName>宋体</FontName>
+            <FontSize>10.5</FontSize>
+            <BorderLeftColor>#FFFFFF</BorderLeftColor>
+            <BorderTopColor>#FFFFFF</BorderTopColor>
+            <BorderRightColor>#FFFFFF</BorderRightColor>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+         <Style Index="4">
+            <FontName>宋体</FontName>
+            <FontSize>10.5</FontSize>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="5">
+            <FontName>宋体</FontName>
+            <FontSize>15.75</FontSize>
+            <Bold>true</Bold>
+            <LineSpacingStyle>SpaceSpecify</LineSpacingStyle>
+            <LineSpacing>83.3333359</LineSpacing>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="6">
+            <BackgroundColor>#00000000</BackgroundColor>
+            <FontName>宋体</FontName>
+            <FontSize>14</FontSize>
+            <Bold>true</Bold>
+         </Style>
+         <Style Index="7">
+            <FontName>宋体</FontName>
+            <FontSize>10.5</FontSize>
+            <Bold>true</Bold>
+            <BorderLeftColor>#FFFFFF</BorderLeftColor>
+            <BorderTopColor>#FFFFFF</BorderTopColor>
+            <BorderRightColor>#FFFFFF</BorderRightColor>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+         <Style Index="8">
+            <FontName>宋体</FontName>
+            <FontSize>9</FontSize>
+            <Bold>true</Bold>
+            <BorderLeftColor>#FFFFFF</BorderLeftColor>
+            <BorderTopColor>#FFFFFF</BorderTopColor>
+            <BorderRightColor>#FFFFFF</BorderRightColor>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+         <Style Index="9">
+            <FontName>宋体</FontName>
+            <FontSize>10.5</FontSize>
+            <Bold>true</Bold>
+         </Style>
+         <Style Index="10">
+            <FontName>宋体</FontName>
+            <FontSize>10.5</FontSize>
+            <Underline>true</Underline>
+         </Style>
+         <Style Index="11">
+            <FontName>宋体</FontName>
+            <FontSize>10.5</FontSize>
+            <LineSpacingStyle>SpaceMultiple</LineSpacingStyle>
+            <LineSpacing>1.3</LineSpacing>
+            <Align>Justify</Align>
+         </Style>
+         <Style Index="12">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <LineSpacingStyle>SpaceMultiple</LineSpacingStyle>
+            <LineSpacing>1.3</LineSpacing>
+            <Align>Right</Align>
+         </Style>
+      </Styles>
+   </ContentStyles>
+   <RepeatedImages />
+   <GlobalJavaScriptReferences />
+   <Info>
+      <LicenseText>宁波金唐:宁波金唐</LicenseText>
+      <CreationTime>1980-01-01T00:00:00</CreationTime>
+      <LastModifiedTime>2019-09-21T15:55:08.6731713+08:00</LastModifiedTime>
+      <LastPrintTime>1980-01-01T00:00:00</LastPrintTime>
+      <Operator>DCSoft.Writer Version:1.2018.12.29</Operator>
+      <NumOfPage>2</NumOfPage>
+   </Info>
+   <BodyText>一、一般资料
+性别：   年龄：     职业：      民族：        籍贯：
+文化程度：○文盲 ○小学 ○初中 ○高中 ○中专 ○大专 ○大学及以上
+家庭状况：○未婚 ○已婚 ○离婚 ○再婚 ○丧偶 子女：□男（） □女（）
+医疗费用：○省医保 ○市/区医保 ○异地医保 ○自费 ○其他
+家庭住址： 邮政编码：222222222222222222222222221111111111111111111111111111111111111112222222222222222222222222222222222222222222222222222333333333333333333333333333331122 电话:222222222222
+联系人： 与患者关系：   联系电话：  
+入院诊断：
+入院日期及时间：        病员来自：○门诊 ○急诊 ○其它
+入院方式：○步行 ○扶助 ○轮椅 ○平车 ○背送 ○抱送 ○其它
+语种：□汉语 □英语 □日语 □韩语 ■其它
+沟通能力：○正常 ○体语 ○含糊不清 ○不能表达
+对疾病认知程度：○知道 ○知道一些 ○不知道 
+家庭/单位对病人健康：○很重视 ○满足 ○不能满足 ○忽视 ○其它  
+二、健康评估
+既往病史：○无  ○有：     家族史：○无  ○有：
+过敏史：○无  ○有  过敏药物：
+        过敏食物：               药物依赖：
+精神状态：□正常 □焦虑 □紧张 □沮丧 □易激动 □忧伤 □恐惧 □其它
+听力：○清晰 ○下降 ○耳聋 ○助听器 ○其它 
+饮食：○正常 ○下降 ○亢进    嗜好：
+小便：○正常 ○失禁 ○尿频 ○尿潴留 ○其它
+大便：○正常 ○腹泻 ○便秘 ○失禁 ○辅助药物
+肢体活动：○正常 ○扶行 ○拐杖 ○轮椅 ○无法行动 ○其它
+睡眠情况：○正常 ○异常小时/天 ○入睡困难 ○多梦 ○易醒 ○失眠 ○服镇静剂
+吸烟：○不吸 ○吸烟每日支，已吸烟年 ○已戒烟
+饮酒：○不饮 ○偶尔 ○大量，每日两，已饮年  ○已戒酒
+体重：○无改变 ○增加 ○减少kg/月，原因
+疼痛：○无 ○有（部位）
+全身皮肤是否完好：○是 ○否  是否压力性损伤高风险患者：○是 ○否  
+生命体征：体温℃  脉搏次/分  呼吸次/分  血压mmHg
+入院视力：VOD：裸眼  小孔  近视力  戴镜视力
+          VOS：裸眼  小孔  近视力  戴镜视力
+评估护士：  患者签名：  评估日期：
+（该表应在患者入院当天内完成，请在合适项目上打“√”或填写）</BodyText>
+   <InvalidateLayoutFast>false</InvalidateLayoutFast>
+   <Comments />
+   <LocalConfig />
+   <PageSettings>
+      <PageIndexsForHideHeaderFooter />
+      <PrinterName />
+      <PaperSource />
+      <HeaderDistance>59</HeaderDistance>
+      <FooterDistance>39</FooterDistance>
+      <LeftMargin>98</LeftMargin>
+      <TopMargin>59</TopMargin>
+      <RightMargin>68</RightMargin>
+      <BottomMargin>59</BottomMargin>
+   </PageSettings>
+</XTextDocument>

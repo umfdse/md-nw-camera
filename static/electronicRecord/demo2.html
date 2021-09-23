@@ -1,0 +1,870 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <title></title>
+    <!-- <link rel="stylesheet" href="{{staticpath}}bootstrap/css/bootstrap.min.css"/>
+    <script text="text/javascript" src="{{staticpath}}bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script> -->
+	<!-- <script type="text/javascript" src="http://172.16.15.231:10086/DemoDocumentImageService.aspx?js=1"></script> -->
+    <!-- <script type="text/javascript" src="http://172.16.15.117:5000/DCWriterDemo/MoreHandleDCWriterServicePage?js=1"></script> -->
+    <script type="text/javascript" src="./jQuery/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="./jQuery/dc_main.js"></script>
+    <script src="./print.min.js"></script>
+   <style>
+    *{
+      margin:0;
+      padding:0;
+      }
+   .button {
+
+    background-color: #4CAF50;
+
+    border: none;
+
+    color: white;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    }
+    .selectForm{
+        width:200px;
+        height: 30px;
+    }
+    .searchBtn{
+        margin-bottom: 20px;
+    }
+    .myWriterControl{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+      width: 100%;
+      height: 900px;
+      /* overflow: hidden; */
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- <div style="background-color: #fff; padding: 5px;">
+
+        <span>测试纯JS控件</span>
+
+    </div> -->
+
+    <!-- <div>
+        <input type="text" name = "name" placeholder="请输入姓名" id="name">
+        <input type="text" name = "techNo" placeholder="请输入科别" id = "techNo">
+        <input type="text" name = "bedNo" placeholder="请输入床号" id = "bedNo">
+        <input type="text" name = "hospitalNo" placeholder="请输入住院号" id="hospitalNo">
+
+    </div> -->
+  <div>
+    <div class="searchBtn no-print">
+        <!-- <input type="button" id="loadXml" onclick="LoaclFile()" value="导入模板" style="float: right;height:30px;margin-right:10px;"> -->
+
+        <!-- <input type="button" id="new" onclick="loadXmlTempFromDb()" value="打开模板" style="float: right;height:30px"> -->
+        <!-- <input type="button" id="new" onclick="openXmlTemList()" value="打开文档" style="float: right;height:30px"> -->
+        <!-- <input type="button" id="new" onclick="saveTemp()" value="保存模板" style="float: right;height:30px;margin-right:10px;"> -->
+        <input type="button" id="save" onclick="saveToDb()" value="保存" style="float: right;height:30px;margin-right:10px;width: 50px;">
+        <!-- <input type="button" id="add"  value="新增" style="float: right;height:30px"> -->
+        <select name="selectForm" id="selectForm" class="selectForm" onchange="changgeSelectForm()">
+            <!-- <option value="null">--全部--</option> -->
+            <option value="入院记录单">入院记录单</option>
+            <option value="出院记录单">出院记录单</option>
+        </select>
+        <input type="button" value="打印预览" onclick="OpenPreview();" class="button" style="width: 80px; height: 30px; text-align: center; "/>
+        <!-- <input type="button" value="打印" onclick="PrintDocument();" class="button" style="width: 80px; height: 30px; text-align: center; " /> -->
+
+    </div>
+    <!-- <input type="button" id="save" onclick="clearDocument()" value="清空" style="float: left;"> -->
+
+    <div id="myWriterControl" class="myWriterControl" style="border:2pxsolidblack; border-radius:5px"
+        ContentRenderMode="NormalHtmlEditable" WorkspaceBackColorString="#B1CAEB"
+
+        ServicePageURL="http://172.16.15.117:5000/DCWriterDemo/MoreHandleDCWriterServicePage" UseClassAttribute="true"
+        HeightCompress="true" PrintBackgroundText="true" PreserveBackgroundTextWhenPrint="true"
+        BackgroundTextOutputMode="Underline" ImageDataEmbedInHtml="true" ServerSleepForDebug="0" AllowCopy="false"
+        pixelpagespacing="5" clientcontextmenutype="Custom" showdebuginfo="false" HeaderFooterEditable="true" registercodeindex="0">
+    </div>
+    <!-- WorkspaceBackgroundImage="Workspace-Background.jpg" -->
+
+    <!-- 打印预览使用的工具条，这是用户在外头自定义的工具条，初始化时不显示，由外部控制是否显示-->
+
+    <div id="btrPrintPreview" style="border:2px solid black;z-index:1000;border:1px solid black;background-color:#cccccc;display:none; float: left;">
+
+        <input type="button" value="打印" onclick="PrintDocument();" class="button" />
+
+        <input type="checkbox" id="chkJumpPrint"  onclick="JumpPrint(this.checked);"/><label for="chkJumpPrint" >续打</label>|
+        <input type="button" id="downLoad" onclick="downLoad()" value="下载">
+
+        <input type="button" id="version" onclick="AboutControl()" value="版本">
+        <input type="checkbox" id="chkMouseDragScroll" onclick="SetMouseDragScroll(this.checked);" />
+
+        <label for="chkMouseDragScroll">拖拽选择</label>
+        <input type="button" value="关闭打印预览" onclick="ClosePrintPreview();" class="button"/>
+    </div>
+   </div>
+
+<script>
+  var formType;
+  function changgeSelectForm(){
+     formType =  document.getElementById("selectForm").value
+    console.log(document.getElementById("selectForm").value)
+    if(document.getElementById("selectForm").value=="入院记录单"){
+      setTimeout("loadToHospitalDoc()",1000)
+    }else if(document.getElementById("selectForm").value=="出院记录单"){
+      setTimeout("loadOutHospitalDoc()",1000)
+    }
+
+
+
+  }
+function openXmlTemList(){
+    $.ajax({
+            url:"http://localhost:9026/writer/user/queryTempList",
+            // data:JSON.stringify(xmlFileName),
+            // data:xmlFileName,
+            // dataType: 'text',
+            dataType:"text",
+            type: 'GET',
+            timeout: 3000,
+            error: function (data) {
+               alert("加载模板列表失败")
+            },
+            success: function (data) {
+               var list =  JSON.parse(data)
+               $("#TbData").html("");
+               var stg="";
+                for(var i=0;i<list.length;i++){
+                        stg+="<tr>";
+                        stg+="<td style='border: 1px solid #d0d0d0;color: #404060;'>" + "<input type='radio'>"+ "</td>";
+                        stg+="<td style='border: 1px solid #d0d0d0;color: #404060;'>" + list[i].id + "</td>";
+                        stg+="<td style='border: 1px solid #d0d0d0;color: #404060;'>" + list[i].xmlFileName + "</td>";
+                        stg+="<td style='border: 1px solid #d0d0d0;color: #404060;'>" + "<input type='button' value='打开' style='background-color: aquamarine;' onclick=\"loadXmlTempFromDb('"+list[i].xmlFileName+"')\">"+ "</td>";
+                        stg+="</tr>";
+                  var $trTemp = $("<tr></tr>");
+                   $trTemp.append("<td style='border: 1px solid #d0d0d0;color: #404060;'>" + "<button id='delete' style ='color:blue;' οnclick=" + "deleteFile('" + fileTable[i].Uploadfilekey + "')" + ">删除</button>" + " <a arget='_blank' style='color:Blue;'  href='/Attendance/DownloadFile/?FileKey=" + fileTable[i].Uploadfilekey + "'>" + "下载" + "</a>" + "</td>");
+                    //      $trTemp.append("<td style='border: 1px solid #d0d0d0;color: #404060;'>" + "<input type='radio'>"+ "</td>");
+                    //      $trTemp.append("<td style='border: 1px solid #d0d0d0;color: #404060;'>" + list[i].id + "</td>");
+                    //      $trTemp.append("<td style='border: 1px solid #d0d0d0;color: #404060;'>" + list[i].xmlFileName + "</td>");
+                    //     //  $trTemp.append("<td style='border: 1px solid #d0d0d0;color: #404060;'>" + fileTable[i].UserId + "</td>");
+                    //     //  $trTemp.append("<td style='border: 1px shaoolid #d0d0d0;color: #404060;'>" + NewDtime + "</td>");
+
+                        // $trTemp.appendTo("#TbData");
+            	}
+                $("#TbData").html(stg);
+                // var ctl = document.getElementById("myWriterControl");
+                // var result = ctl.LoadDocumentFromBase64String(xml, "xml");
+                $('#win').show();
+                // $('#tempList').show();
+
+            }
+        });
+}
+// $("#add").click(function () {
+//     alert(222)
+//     debugger
+//     var doc = ctl.GetContentDocument();
+//     var TableMain = doc.getElementById("TableMain");
+//     if (TableMain == null) {
+//         return;
+//     }
+//     var tr = $(TableMain).find("tr[dc_headerstyle!='true']:last");
+//     if (tr.text() == "") {
+//         tr.dblclick();
+//     } else {
+//         showDiv();//显示遮罩层和新增修改层
+//     }
+// });
+function closeXmlTemList(){
+document.getElementById("win").style.display="none";
+}
+</script>
+<!-- <a href="javascript:openLogin();">打开权登录框</a> -->
+    <script type="text/javascript">
+        //设置续打
+        function JumpPrint(setValue){
+            var ctl = document.getElementById("myWriterControl");
+
+            ctl.SetJumpPrintMode(setValue);
+
+            document.getElementById("chkMouseDragScroll").checked = false;
+
+            ctl.setMouseDragScrollMode(false);
+
+        }
+
+        //显示打印预览内容
+
+        function OpenPreview(){
+
+            //获得最外面的容器元素并设置位置
+
+            var ctl = document.getElementById("myWriterControl");
+
+            //填充打印预览内容
+            // print(ctl)
+
+            ctl.LoadPrintPreview();
+
+        }
+
+        //设置在预览中，使用鼠标滚轮拖拽
+
+        function SetMouseDragScroll(setValue) {
+
+            var ctl = document.getElementById("myWriterControl");
+
+            ctl.setMouseDragScrollMode(setValue);
+
+        }
+
+        //打印文档
+
+        function PrintDocument() {
+          // printJS('myWriterControl','html')
+            // print("#myWriterControl")
+            var ctl = document.getElementById("myWriterControl");
+            // ctl.LoadPrintPreview();
+            // var settings = {
+            //     PrintWindowWidth: "1920",
+            //     PrintWindowHeight: "1080",
+            //     PrintWindowTop: "0",
+            //     PrintWindowLeft: "0"
+            // };
+
+            ctl.PrintDocument();
+
+        }
+
+        //关闭打印预览
+
+        function ClosePrintPreview() {
+
+            var ctl = document.getElementById("myWriterControl");
+
+            ctl.ClosePrintPreview();
+
+        }
+
+        //使用命名，打印文档
+
+        function PrintDocumentByCommand() {
+
+            var ctl = document.getElementById("myWriterControl");
+
+            ctl.DCExecuteCommand('Print',true,null);
+
+        }
+         function LoaclFile(){
+             var ctl = document.getElementById("myWriterControl");
+             ctl.DCExecuteCommand('FileOpen',true,null);
+             var ctl = document.getElementById("myWriterControl");
+            ctl.onDocumentLoad = function (evenObject,name){
+            //     var name = $('#name').val();
+            //     var techN0 = $("#techNo").val();
+            //     var bedNo = $("#bedNo").val();
+            //     var hospitalNo = $("#hospitalNo").val();
+            // var userInfo = {"userName":name,"techNo":techN0,"bedNo":bedNo,"hospitalNo":hospitalNo}
+        //          $.ajax({
+        //            url: "http://localhost:9026/writer/user/queryUserInfo",
+        //         //    data:{"userName":name,"techNo":techN0,"bedNo":bedNo,"hospitalNo":hospitalNo},
+        //         data:JSON.stringify(userInfo),
+        //          dataType: 'text',
+        //         // dataType:"application/json",
+        //            contentType :"application/json",
+        //             type: 'POST',
+        //             timeout: 2000,
+        //             success: function (data) {
+        //             debugger
+        //             var obj = JSON.parse(data)
+        //             alert(obj.userName)
+        //             alert(obj.techNo)
+        //             alert(obj.bedNo)
+        //             alert(obj.hospitalNo)
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('姓名YM',obj.userName);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('科别',obj.techNo);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('床号',obj.bedNo);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('住院号',obj.hospitalNo);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('姓名',obj.userName);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('出生地',obj.birthPlace);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('性别',obj.sex);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('职业',obj.job);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('年龄',obj.age);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('入院时间',obj.goToHospitalDate);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('记录时间',obj.recordDate);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('民族',obj.nation);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('婚姻',obj.marriage);
+
+        //      },
+        //      error:function(arg1){
+        //          alert(888)
+        //     $.jBox.tip( "系统异常,请联系管理员" , 'warning');
+        //     console.log(arg1)
+        // }
+        //  });
+        // $.ajax({
+        //            url: "http://localhost:9026/writer/user/queryBaseInfo",
+        //         //    data:{"userName":name,"techNo":techN0,"bedNo":bedNo,"hospitalNo":hospitalNo},
+        //         data:JSON.stringify(userInfo),
+        //          dataType: 'text',
+        //         // dataType:"application/json",
+        //            contentType :"application/json",
+        //             type: 'POST',
+        //             timeout: 2000,
+        //             success: function (data) {
+        //             var obj = JSON.parse(data)
+        //             alert(obj.userName)
+        //             alert(obj.techNo)
+        //             alert(obj.bedNo)
+        //             alert(obj.hospitalNo)
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('姓名YM',obj.userName);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('科别',obj.techNo);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('床号',obj.bedNo);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('住院号',obj.hospitalNo);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('姓名',obj.userName);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('出生地',obj.birthPlace);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('性别',obj.sex);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('职业',obj.job);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('年龄',obj.age);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('入院时间',obj.toHospitalDate);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('记录时间',obj.recordTime);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('民族',obj.nation);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('婚姻',obj.marriage);
+        //         var field1= document.getElementById("myWriterControl").SetElementTextByID('病史陈述者',obj.medicalHistoryPresenter);
+
+
+        //      },
+        //      error:function(arg1){
+        //          alert(888)
+        //     $.jBox.tip( "系统异常,请联系管理员" , 'warning');
+        //     console.log(arg1)
+        // }
+        //  });
+
+                // var field1= document.getElementById("myWriterControl").SetElementTextByID('姓名YM',name);
+                // var field1= document.getElementById("myWriterControl").SetElementTextByID('科别',techN0);
+                // var field1= document.getElementById("myWriterControl").SetElementTextByID('床号',bedNo);
+                // var field1= document.getElementById("myWriterControl").SetElementTextByID('住院号',hospitalNo);
+              //   var doc = document.getElementById("myWriterControl").GetContentDocument();
+              // $(doc).find("[dctype=\"XTextDocumentHeaderElement\"],[dctype=\"XTextDocumentFooterElement\"]").css("pointer-events", "none");
+            }
+             //var field = document.getElementById("myWriterControl").SetElementTextByID('姓名YM',name);
+         }
+         function AboutControl(){
+            var ctl = document.getElementById("myWriterControl");
+            ctl.AboutControl();
+         }
+          //下载
+        function downLoad(){
+            var ctl = document.getElementById("myWriterControl");
+            //下载PDF文件
+            ctl.DownLoadFile('PDF');
+            //下载xml文件
+            ctl.DownLoadFile('xml');
+            //下载RTF文件
+            ctl.DownLoadFile('RTF');
+            //下载txt文件
+            ctl.DownLoadFile('txt');
+            //下载长图片文件，默认是png格式
+            ctl.DownLoadFile('longimg');
+        }
+        function saveToDb(){
+
+          // var type = document.getElementById("selectForm").value? "入院记录单" : document.getElementById("selectForm").value
+        // var formType= formType? "入院记录单":formType
+          console.log(formType)
+          // console.log(type)
+            //入院
+            if(formType=="出院记录单"){
+              outPut()
+
+            }else{
+              inputHospital()
+            }
+        }
+
+        function inputHospital() {
+          var ctl = document.getElementById("myWriterControl");
+          // var field = document.getElementById("myWriterControl1").GetElementTextByID(id);
+          var name= document.getElementById("myWriterControl").GetElementTextByID('name');
+          var sex= document.getElementById("myWriterControl").GetElementTextByID('sex');
+          var age= document.getElementById("myWriterControl").GetElementTextByID('age');
+          var inhosNum= document.getElementById("myWriterControl").GetElementTextByID('inhosNum');
+          var job= document.getElementById("myWriterControl").GetElementTextByID('job');
+          var nation= document.getElementById("myWriterControl").GetElementTextByID('nation');
+          var education= document.getElementById("myWriterControl").GetElementTextByID('education');
+          var isExpectToHospital = document.getElementById("myWriterControl").GetElementTextByID('isExpectToHospital')
+          var height= document.getElementById("myWriterControl").GetElementTextByID('height');
+          var weight= document.getElementById("myWriterControl").GetElementTextByID('weight');
+          var admissionTime= document.getElementById("myWriterControl").GetElementTextByID('admissionTime');
+          var treatment= document.getElementById("myWriterControl").GetElementTextByID('treatment');
+          var mainComplain= document.getElementById("myWriterControl").GetElementTextByID('mainComplain');
+          var doc= ctl.GetContentDocument();
+          var checkedRadio1 = $(doc).find("[name='toHospitalWay']:radio:checked");
+          var toHospitalWay = checkedRadio1.attr("id")
+          var temperature= document.getElementById("myWriterControl").GetElementTextByID('temperature');
+          var pluseRate= document.getElementById("myWriterControl").GetElementTextByID('pluseRate');
+          var breatheRate= document.getElementById("myWriterControl").GetElementTextByID('breathRate');
+          var bloodPressure= document.getElementById("myWriterControl").GetElementTextByID('bloodPressure');
+          // var checked = true ;
+          // var value =  ctl.SetElementCheckedByID('conscious', checked)
+          var doc= ctl.GetContentDocument();
+          var checkedRadio1 = $(doc).find("[name='conscious']:radio:checked");
+          var conscious = checkedRadio1.attr("id")
+          var checkedRadio2 = $(doc).find("[name='facialExpression']:radio:checked");
+          var facialExpression= checkedRadio2.attr("id");
+          var checkedRadio3 =  $(doc).find("[name='mindState']:radio:checked");
+          var mindState= checkedRadio3.attr("id");
+          var checkedRadio4 = $(doc).find("[name='verbalCommunication']:radio:checked");
+          var verbalCommunication= checkedRadio4.attr("id")
+          var pastMedicalHistory= document.getElementById("myWriterControl").GetElementTextByID('pastMedicalHistory');
+          var drugAllergyHistory= document.getElementById("myWriterControl").GetElementTextByID('drugAllergyHistory');
+          var allergyMateria= document.getElementById("myWriterControl").GetElementTextByID('allergyMateria');
+          var smokingHistory= document.getElementById("myWriterControl").GetElementTextByID('smokingHistory');
+          var checkedRadio10 = $(doc).find("[name='isLiveSmokeEnv']:radio:checked");
+          var isLiveSmokeEnv= checkedRadio10.attr("id")
+          var alcoholHistory=document.getElementById("myWriterControl").GetElementTextByID('alcoholHistory');
+          var diet= document.getElementById("myWriterControl").GetElementTextByID('diet');
+          var hobby= document.getElementById("myWriterControl").GetElementTextByID('hobby');
+          var nutrition= document.getElementById("myWriterControl").GetElementTextByID('nutrition');
+          var mouthMucosa= document.getElementById("myWriterControl").GetElementTextByID('mouthMucosa');
+          var appetite= document.getElementById("myWriterControl").GetElementTextByID('appetite');
+          var sleep= document.getElementById("myWriterControl").GetElementTextByID('sleep');
+          var assitSleep= document.getElementById("myWriterControl").GetElementTextByID('assitSleep');
+          var selfCareLevel= document.getElementById("myWriterControl").GetElementTextByID('selfCareLevel');
+          var exercise= document.getElementById("myWriterControl").GetElementTextByID('exercise');
+          var position= document.getElementById("myWriterControl").GetElementTextByID('position');
+          var skinMucousMembrane= document.getElementById("myWriterControl").GetElementTextByID('skinMucousMembrane');
+          var defecation= document.getElementById("myWriterControl").GetElementTextByID('defecation');
+          var micturition= document.getElementById("myWriterControl").GetElementTextByID('micturition');
+          var patientRecordId=message.patientRecordId;
+          var archivesid = message.archivesid;
+          var inputHospitalDto = {"name":name,"sex":sex,"age":age,"inhosNum":inhosNum,"job":job,"nation":nation,"education":education,"height":height,
+            "weight":weight,"admissionTime":admissionTime,"treatment":treatment,"mainComplain":mainComplain,"toHospitalWay":toHospitalWay,"temperature":temperature,"pluseRate":pluseRate,
+            "breatheRate":breatheRate,"bloodPressure":bloodPressure,"conscious":conscious,"facialExpression":facialExpression,"mindState":mindState,"verbalCommunication":verbalCommunication,
+            "pastMedicalHistory":pastMedicalHistory,"drugAllergyHistory":drugAllergyHistory,"allergyMateria":allergyMateria,"smokingHistory":smokingHistory,"isLiveSmokeEnv":isLiveSmokeEnv,
+            "diet":diet,"hobby":hobby,"nutrition":nutrition,"mouthMucosa":mouthMucosa,"appetite":appetite,"sleep":sleep,"assitSleep":assitSleep,"selfCareLevel":selfCareLevel,"exercise":exercise,
+            "position":position,"skinMucousMembrane":skinMucousMembrane,"defecation":defecation,"micturition":micturition,"patientRecordId":patientRecordId,"archivesid":archivesid,"isExpectToHospital":isExpectToHospital,
+            "alcoholHistory":alcoholHistory}
+          $.ajax({
+            url: message.url+"/api/icu/extimate/saveToHospitalEstimate",
+            //    data:{"userName":name,"techNo":techN0,"bedNo":bedNo,"hospitalNo":hospitalNo},
+            data:JSON.stringify(inputHospitalDto),
+            dataType: 'text',
+            // dataType:"application/json",
+            contentType :"application/json",
+            type: 'POST',
+            timeout: 2000,
+            beforeSend: function (XMLHttpRequest) {
+                    XMLHttpRequest.setRequestHeader("token",message.token);
+                    XMLHttpRequest.setRequestHeader("LOGINTYPE",4 );
+                },
+            success: function (data) {
+              var obj = JSON.parse(data)
+              console.log(obj,obj.msg)
+              if(obj.msg!=201){
+                // $.jBox.tip(obj.content, 'warning');
+                alert(obj.content)
+              }else{
+                // $.jBox.tip("保存成功" , 'success');
+                alert(obj.content)
+              }
+            },
+            error:function(arg1){
+              $.jBox.tip("系统异常,请联系管理员" , 'warning');
+              console.log(arg1)
+            }
+          });
+          var fieldList = document.getElementById("myWriterControl").GetAllInputFields(true, true);
+          // var field = document.getElementById("myWriterControl1").GetElementTextByID(id);
+          console.log(fieldList)
+        }
+        function outPut() {
+          var ctl = document.getElementById("myWriterControl");
+          // var field = document.getElementById("myWriterControl1").GetElementTextByID(id);
+          var name= document.getElementById("myWriterControl").GetElementTextByID('name');
+          var sex= document.getElementById("myWriterControl").GetElementTextByID('sex');
+          var age= document.getElementById("myWriterControl").GetElementTextByID('age');
+          var inhosNum= document.getElementById("myWriterControl").GetElementTextByID('inhosNum');
+          var job= document.getElementById("myWriterControl").GetElementTextByID('job');
+          var nation= document.getElementById("myWriterControl").GetElementTextByID('nation');
+          var education= document.getElementById("myWriterControl").GetElementTextByID('education');
+          var leaveHospitalTreat = document.getElementById("myWriterControl").GetElementTextByID('leaveHospitalTreat')
+          var leaveHospitalDate= document.getElementById("myWriterControl").GetElementTextByID('leaveHospitalDate');
+          var weight= document.getElementById("myWriterControl").GetElementTextByID('weight');
+          var doc= ctl.GetContentDocument();
+          var checkedRadio1 = $(doc).find("[name='woundHealing']:radio:checked");
+          var woundHealing = checkedRadio1.attr("id")
+          var checkedRadio2 = $(doc).find("[name='recovery']:radio:checked");
+          var recovery = checkedRadio2.attr("id")
+          var checkedRadio3 = $(doc).find("[name='exerciseEnergy']:radio:checked");
+          var exerciseEnergy = checkedRadio3.attr("id")
+          // var checkedRadio5 = $(doc).find("[name='generalGuide']:radio:checked");
+          var checkedRadio5 = $(doc).find("[name='generalGuide']:checkbox:checked");
+          var generalGuide = ""
+          checkedRadio5.each(function () {
+            generalGuide+=this.id+","
+          })
+          if (generalGuide.length > 0) {
+            generalGuide = generalGuide.substr(0,generalGuide.length - 1);
+          }
+          // var generalGuide = checkedRadio5.attr("dc_caption")
+          var takeMedicineGuide = document.getElementById("myWriterControl").GetElementTextByID('takeMedicineGuide');
+          var checkedRadio7 = $(doc).find("[name='leaveHospitalWay']:radio:checked");
+          var leaveHospitalWay = checkedRadio7.attr("id")
+          var professialGuide = document.getElementById("myWriterControl").GetElementTextByID('professialGuide')
+          var personalityGuide = document.getElementById("myWriterControl").GetElementTextByID('personalityGuide')
+          var height = document.getElementById("myWriterControl").GetElementTextByID('height')
+          var patientRecordId=message.patientRecordId;
+          var archivesid = message.archivesid;
+          var outPutDto = {"name":name,"sex":sex,"age":age,"inhosNum":inhosNum,"job":job,"nation":nation,"education":education,"height":height,
+            "leaveHospitalTreat":leaveHospitalTreat,"leaveHospitalDate":leaveHospitalDate,"weight":weight,"woundHealing":woundHealing,"recovery":recovery,"exerciseEnergy":exerciseEnergy,
+          "generalGuide":generalGuide,"takeMedicineGuide":takeMedicineGuide,"professialGuide":professialGuide,"personalityGuide":personalityGuide,"patientRecordId":patientRecordId,"archivesid":archivesid,
+          "leaveHospitalWay":leaveHospitalWay}
+          $.ajax({
+            url: message.url+"/api/icu/extimate/saveOutPutHospitalEstimate",
+            //    data:{"userName":name,"techNo":techN0,"bedNo":bedNo,"hospitalNo":hospitalNo},
+            data:JSON.stringify(outPutDto),
+            dataType: 'text',
+            // dataType:"application/json",
+            contentType :"application/json",
+            type: 'POST',
+            timeout: 2000,
+            beforeSend: function (XMLHttpRequest) {
+                    XMLHttpRequest.setRequestHeader("token",message.token);
+                    XMLHttpRequest.setRequestHeader("LOGINTYPE",4 );
+            },
+            success: function (data) {
+              var obj = JSON.parse(data)
+              if(obj.msg!=201){
+                alert(obj.content);
+              }else{
+                alert(obj.content);
+              }
+
+            },
+            error:function(arg1){
+              $.jBox.tip("系统异常,请联系管理员" , 'warning');
+              console.log(arg1)
+            }
+          });
+          var fieldList = document.getElementById("myWriterControl").GetAllInputFields(true, true);
+          // var field = document.getElementById("myWriterControl1").GetElementTextByID(id);
+          console.log(fieldList)
+          var baseRecord = {}
+        }
+        function clearDocument(){
+            var ctl = document.getElementById("myWriterControl");
+            ctl.ClearDocumentBody();
+        }
+        function  createDoc(){
+            var ctl = document.getElementById("myWriterControl");
+            ctl.DCExecuteCommand('FileNew', true, null);
+
+        }
+        function disableedForHead(){
+            var doc = document.getElementById("myWriterControl").GetContentDocument();
+            $(doc).find("[dctype=\"XTextDocumentHeaderElement\"],[dctype=\"XTextDocumentFooterElement\"]").css("pointer-events", "none");
+        }
+        function saveTemp(){
+            var ctl = document.getElementById("myWriterControl");
+            var templateName = document.getElementById("myWriterControl").FileName
+            alert(templateName)
+            var templateContent = ctl.SaveDocumentToBase64String("xml");
+            var xmlModel = {"templateName":templateName,"templateContent":templateContent}
+
+            $.ajax({
+                   url: 'http://172.16.15.117:9081/api/icu/extimate/saveBase64XmlString',
+                 data:JSON.stringify(xmlModel),
+                 dataType: 'text',
+                // dataType:"application/json",
+                   contentType :"application/json",
+                    type: 'POST',
+                    timeout: 2000,
+                    // cache: false,
+                    // async: true,
+                  beforeSend: function (XMLHttpRequest) {
+                    XMLHttpRequest.setRequestHeader("token",message.token);
+                    XMLHttpRequest.setRequestHeader("LOGINTYPE",4 );
+                },
+
+                    success: function (data) {
+                    var obj = JSON.parse(data)
+             },
+             error:function(arg1){
+            $.jBox.tip("系统异常,请联系管理员" , 'warning');
+            console.log(arg1)
+        }
+         });
+        }
+        //从数据库加载xml模板
+        function loadToHospitalDoc(){
+          var inputDto = {"patientRecordId":message.patientRecordId,"archivesid":message.archivesid,"templateName":"入院评估"}
+            $.ajax({
+                url: message.url+"/api/icu/extimate/queryInputHospitalEstimateDetail",
+                //    data:{"userName":name,"techNo":techN0,"bedNo":bedNo,"hospitalNo":hospitalNo},
+                data:JSON.stringify(inputDto),
+              dataType: 'text',
+              // dataType:"application/json",
+              contentType :"application/json",
+              type: 'POST',
+              timeout: 2000,
+              beforeSend: function (XMLHttpRequest) {
+                    XMLHttpRequest.setRequestHeader("token",message.token);
+                    XMLHttpRequest.setRequestHeader("LOGINTYPE",4 );
+                },
+              success: function (data) {
+                var obj = JSON.parse(data).respData
+                var ctl = document.getElementById("myWriterControl")
+                var result = ctl.LoadDocumentFromBase64String(obj.templateContent, "xml");
+                ctl.onDocumentLoad = function (evenObject,name){
+                  var inputDto = {"patientRecordId":message.patientRecordId,"archivesid":message.archivesid,"templateName":""}
+                  $.ajax({
+                    url: message.url+"/api/icu/extimate/queryInputHospitalEstimateDetail",
+                    data:JSON.stringify(inputDto),
+                    dataType: 'text',
+                    // dataType:"application/json",
+                    contentType :"application/json",
+                    type: 'POST',
+                    // timeout: 10000,
+                    beforeSend: function (XMLHttpRequest) {
+                    XMLHttpRequest.setRequestHeader("token",message.token);
+                    XMLHttpRequest.setRequestHeader("LOGINTYPE",4 );
+                },
+                    success: function (data) {
+                      var obj = JSON.parse(data).respData
+                      var ctl = document.getElementById("myWriterControl")
+                     ctl.SetElementTextByID('name',obj.name);
+                      ctl.SetElementTextByID('name1',obj.name);
+                      ctl.SetElementTextByID('sex',obj.sex);
+                      ctl.SetElementTextByID('sex1',obj.sex);
+                       ctl.SetElementTextByID('inhosNum',obj.inhosNum);
+                      ctl.SetElementTextByID('age',obj.age);
+                      ctl.SetElementTextByID('age1',obj.age);
+                       ctl.SetElementTextByID('height',obj.height);
+                      ctl.SetElementTextByID('job',obj.job);
+                       ctl.SetElementTextByID('weight',obj.weight);
+                      ctl.SetElementTextByID('nation',obj.nation);
+                      ctl.SetElementTextByID('education',obj.education);
+                      ctl.SetElementTextByID('admissionTime',obj.admissionTime);
+                      ctl.SetElementTextByID('isExpectToHospital',obj.isExpectToHospital);
+                      ctl.SetElementTextByID('treatment',obj.treatment);
+                      ctl.SetElementTextByID('mainComplain',obj.mainComplain);
+                      ctl.SetElementCheckedByID(obj.toHospitalWay,true);
+                       ctl.SetElementTextByID('temperature',obj.temperature);
+                      ctl.SetElementTextByID('pluseRate',obj.pluseRate);
+                      ctl.SetElementTextByID('breathRate',obj.breatheRate);
+                      ctl.SetElementTextByID('bloodPressure',obj.bloodPressure);
+                      ctl.SetElementCheckedByID(obj.conscious,true)
+                      ctl.SetElementCheckedByID(obj.facialExpression,true);
+                      ctl.SetElementCheckedByID(obj.mindState,true);
+                      ctl.SetElementCheckedByID(obj.verbalCommunication,true);
+                      ctl.SetElementTextByID('pastMedicalHistory',obj.pastMedicalHistory);
+                      ctl.SetElementTextByID('drugAllergyHistory',obj.drugAllergyHistory);
+                      ctl.SetElementTextByID('allergyMateria',obj.allergyMateria);
+                      ctl.SetElementTextByID('alcoholHistory',obj.alcoholHistory);
+                      ctl.SetElementTextByID('smokingHistory',obj.smokingHistory);
+                      ctl.SetElementCheckedByID(obj.isLiveSmokeEnv,true);
+                      ctl.SetElementTextByID('diet',obj.diet);
+                      ctl.SetElementTextByID('hobby',obj.hobby);
+                      ctl.SetElementTextByID('nutrition',obj.nutrition);
+                      ctl.SetElementTextByID('mouthMucosa',obj.mouthMucosa);
+                      ctl.SetElementTextByID('appetite',obj.appetite);
+                      ctl.SetElementTextByID('sleep',obj.sleep);
+                      ctl.SetElementTextByID('assitSleep',obj.assitSleep);
+                      ctl.SetElementTextByID('selfCareLevel',obj.selfCareLevel);
+                      ctl.SetElementTextByID('exercise',obj.exercise);
+                      ctl.SetElementTextByID('position',obj.position);
+                      ctl.SetElementTextByID('skinMucousMembrane',obj.skinMucousMembrane);
+                      ctl.SetElementTextByID('defecation',obj.defecation);
+                      ctl.SetElementTextByID('micturition',obj.micturition);
+                      // ctl.onDocumentLoad=loadToHospitalData(obj)
+
+                    },
+                    error:function(arg1){
+                      $.jBox.tip( "系统异常,请联系管理员" , 'warning');
+                      console.log(arg1)
+                    }
+
+                  })
+                }
+
+              },
+              error:function(arg1){
+                $.jBox.tip( "系统异常,请联系管理员" , 'warning');
+                console.log(arg1)
+              }
+
+            })
+
+        }
+        function loadOutHospitalDoc(type){
+
+          var outPutDto = {"patientRecordId":message.patientRecordId,"archivesid":message.archivesid,"templateName":"出院评估"}
+          $.ajax({
+            url: message.url+"/api/icu/extimate/queryOutputHospitalEstimateDetail",
+            data:JSON.stringify(outPutDto),
+            dataType: 'text',
+            // dataType:"application/json",
+            contentType :"application/json",
+            type: 'POST',
+            // timeout: 10000,
+            beforeSend: function (XMLHttpRequest) {
+                    XMLHttpRequest.setRequestHeader("token",message.token);
+                    XMLHttpRequest.setRequestHeader("LOGINTYPE",4 );
+                },
+            success: function (data) {
+
+              var obj = JSON.parse(data).respData
+              var ctl = document.getElementById("myWriterControl")
+              var result = ctl.LoadDocumentFromBase64String(obj.templateContent, "xml");
+              ctl.onDocumentLoad = function (evenObject,name){
+
+                var outPutDto = {"patientRecordId":message.patientRecordId,"archivesid":message.archivesid,"templateName":""}
+                $.ajax({
+                  url: message.url+"/api/icu/extimate/queryOutputHospitalEstimateDetail",
+                  data:JSON.stringify(outPutDto),
+                  dataType: 'text',
+                  // dataType:"application/json",
+                  contentType :"application/json",
+                  type: 'POST',
+                  // timeout: 10000,
+                  beforeSend: function (XMLHttpRequest) {
+                    XMLHttpRequest.setRequestHeader("token",message.token);
+                    XMLHttpRequest.setRequestHeader("LOGINTYPE",4 );
+                },
+                  success: function (data) {
+                    var obj = JSON.parse(data).respData
+                    var ctl = document.getElementById("myWriterControl")
+                  ctl.SetElementTextByID('name',obj.name);
+                   ctl.SetElementTextByID('name1',obj.name);
+                   ctl.SetElementTextByID('sex',obj.sex);
+                   ctl.SetElementTextByID('sex1',obj.sex);
+                   ctl.SetElementTextByID('inhosNum',obj.inhosNum);
+                    ctl.SetElementTextByID('age',obj.age);
+                   ctl.SetElementTextByID('age1',obj.age);
+                    ctl.SetElementTextByID('height',obj.height);
+                    ctl.SetElementTextByID('weight',obj.weight);
+                   ctl.SetElementTextByID('job',obj.job);
+                   ctl.SetElementTextByID('leaveHospitalTreat',obj.leaveHospitalTreat);
+                   ctl.SetElementTextByID('leaveHospitalDate',obj.leaveHospitalDate);
+                    ctl.SetElementCheckedByID(obj.woundHealing,true)
+                    ctl.SetElementCheckedByID(obj.recovery,true);
+                    ctl.SetElementCheckedByID(obj.exerciseEnergy,true);
+                    ctl.SetElementCheckedByID(obj.leaveHospitalWay,true);
+                    var guideArray = obj.generalGuide.split(",")
+                    // guideArray.each(function () {
+                    //   ctl.SetElementCheckedByID(this,true);
+                    // })
+                    guideArray.forEach(function (value, index) {
+                      ctl.SetElementCheckedByID(value,true)
+                    })
+                    // ctl.SetElementCheckedByID(obj.generalGuide,true);
+                    ctl.SetElementTextByID("takeMedicineGuide",obj.takeMedicineGuide);
+                    ctl.SetElementTextByID("professialGuide",obj.professialGuide);
+                    ctl.SetElementTextByID("personalityGuide",obj.personalityGuide);
+
+                  },
+                  error:function(arg1){
+                    $.jBox.tip( "系统异常,请联系管理员" , 'warning');
+                    console.log(arg1)
+                  }
+
+                })
+              }
+            },
+            error:function(arg1){
+              $.jBox.tip( "系统异常,请联系管理员" , 'warning');
+              console.log(arg1)
+            }
+
+          })
+        }
+        // function loadXmlTempFromDb(xmlFileName){
+        //     // var xmlFileName = "手术风险评估(青白科)"
+        //     var file = "";
+        // $.ajax({
+        //     // url: "/SubDocumentTemplate/" + name,
+        //     url:"http://localhost:9026/writer/user/loadXmlTempFromDb?xmlFileName="+xmlFileName,
+        //     // data:JSON.stringify(xmlFileName),
+        //     // data:xmlFileName,
+        //     // dataType: 'text',
+        //     dataType:"text",
+        //     type: 'GET',
+        //     timeout: 3000,
+        //     error: function (xml) {
+        //         alert(xml)
+        //         alert("加载XML文件出错！");
+        //     },
+        //     success: function (xml) {
+        //         alert(xml)
+        //         var ctl = document.getElementById("myWriterControl");
+        //         var result = ctl.LoadDocumentFromBase64String(xml, "xml");
+        //     }
+        // });
+        // $('#win').hide();
+
+        // }
+
+</script>
+   <script type="text/javascript">
+    var message;
+            window.addEventListener('message',function(e){
+
+                             message=e.data;
+                            console.log(message)
+            })
+
+           // 获得控件容器元素
+
+           var ctl = document.getElementById("myWriterControl");
+
+           // 绑定控件
+
+           BindingDCWriterClientControl(ctl);
+        //    ctl.Options.AutoZoom = true;
+
+           ctl.ToolbarForPrintPreview = document.getElementById("btrPrintPreview");
+
+           // 创建编辑器框架
+
+           ctl.BuildFrame(function () {
+            var opts = {
+            PaperKind: "Custom",//自定义
+            PaperWidth: "210",//宽度
+            PaperHeight: "297",//高度
+            Landscape: "false",//横向，纵向
+            ViewLeftMargin: "10",//左边距 单位 像素
+            ViewRightMargin: "10",//右边距 单位 像素
+		        // ViewTopMargin: "100",//上边距 单位 像素
+            // ViewBottomMargin: "300",//下边距 单位 像素
+            ViewHeaderDistance: "10",//页眉位置 单位百分之一英寸
+            ViewFooterDistance: "10"//页脚位置 单位百分之一英寸
+			}
+			var ctl = document.getElementById("myWriterControl")
+			ctl.ChangeDocumentSettings(opts);
+            // var ctl = document.getElementById("myWriterControl");
+            // ctl.LoadDocumentFromFile("ry.xml", null);
+            // loadXmlTemplate();
+           setTimeout("loadToHospitalDoc()",1000)
+            // loadToHospitalDoc()q
+           });
+
+    </script>
+
+</body>
+
+</html>

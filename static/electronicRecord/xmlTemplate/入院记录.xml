@@ -1,0 +1,902 @@
+﻿<XTextDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" EditorVersionString="0.0.0.0">
+   <Attributes>
+      <Attribute>
+         <Name>DCLocalDataSource</Name>
+         <Value>&lt;DataSourceDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="DataSource" Name="DataSource" Guid="9c34a38d-a29b-4685-83f9-db43397b4d3a" Title=""&gt;&lt;Parameters /&gt;&lt;Nodes /&gt;&lt;/DataSourceDocument&gt;</Value>
+      </Attribute>
+   </Attributes>
+   <DataBindingContentVersion>0</DataBindingContentVersion>
+   <XElements>
+      <Element xsi:type="XTextHeader">
+         <Attributes />
+         <ID>divXTextDocumentHeaderElement</ID>
+         <AcceptTab>true</AcceptTab>
+         <DataBindingContentVersion>0</DataBindingContentVersion>
+         <XElements>
+            <Element xsi:type="XInputField" StyleIndex="1">
+               <Attributes />
+               <ID>机构名称</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements>
+                  <Element xsi:type="XString" StyleIndex="1">
+                     <DataBindingContentVersion>0</DataBindingContentVersion>
+                     <XElements xsi:nil="true" />
+                     <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                     <Text>潍坊市潍城区杏埠中心卫生院</Text>
+                  </Element>
+               </XElements>
+               <Deleteable>false</Deleteable>
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <MoveFocusHotKey>Tab</MoveFocusHotKey>
+               <Alignment>Center</Alignment>
+               <EventExpressions />
+               <Name>机构名称</Name>
+               <InnerValue>潍坊市潍城区杏埠中心卫生院</InnerValue>
+               <BackgroundText>机构名称</BackgroundText>
+               <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+               <LastSelectedListItems />
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="2" />
+            <Element xsi:type="XString">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>科别：</Text>
+            </Element>
+            <Element xsi:type="XInputField">
+               <Attributes />
+               <ID>科别</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements>
+                  <Element xsi:type="XString">
+                     <DataBindingContentVersion>0</DataBindingContentVersion>
+                     <XElements xsi:nil="true" />
+                     <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                     <Text>内科病房</Text>
+                  </Element>
+               </XElements>
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <EventExpressions />
+               <Name>科别</Name>
+               <InnerValue>内科病房</InnerValue>
+               <BackgroundText>科别</BackgroundText>
+               <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+               <LastSelectedListItems />
+            </Element>
+            <Element xsi:type="XString">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;床号：</Text>
+            </Element>
+            <Element xsi:type="XInputField">
+               <Attributes />
+               <ID>床号</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements>
+                  <Element xsi:type="XString">
+                     <DataBindingContentVersion>0</DataBindingContentVersion>
+                     <XElements xsi:nil="true" />
+                     <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                     <Text>31</Text>
+                  </Element>
+               </XElements>
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <EventExpressions />
+               <Name>床号</Name>
+               <InnerValue>31</InnerValue>
+               <BackgroundText>床号</BackgroundText>
+               <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+               <LastSelectedListItems />
+            </Element>
+            <Element xsi:type="XString">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>床&#x2002;&#x2002;&#x2002;&#x2002;姓名：</Text>
+            </Element>
+            <Element xsi:type="XInputField">
+               <Attributes />
+               <ID>姓名YM</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements>
+                  <Element xsi:type="XString">
+                     <DataBindingContentVersion>0</DataBindingContentVersion>
+                     <XElements xsi:nil="true" />
+                     <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                     <Text>李嫒英</Text>
+                  </Element>
+               </XElements>
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <EventExpressions />
+               <Name>姓名</Name>
+               <InnerValue>李嫒英</InnerValue>
+               <BackgroundText>姓名</BackgroundText>
+               <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+               <LastSelectedListItems />
+            </Element>
+            <Element xsi:type="XString">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;住院号：</Text>
+            </Element>
+            <Element xsi:type="XInputField" StyleIndex="3">
+               <Attributes />
+               <ID>住院号</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements>
+                  <Element xsi:type="XString">
+                     <DataBindingContentVersion>0</DataBindingContentVersion>
+                     <XElements xsi:nil="true" />
+                     <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                     <Text>201910316</Text>
+                  </Element>
+               </XElements>
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <EventExpressions />
+               <Name>住院号</Name>
+               <InnerValue>201910316</InnerValue>
+               <BackgroundText>住院号</BackgroundText>
+               <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+               <LastSelectedListItems />
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="4" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextBody">
+         <Attributes />
+         <ID>divDocumentBody_0</ID>
+         <AcceptTab>true</AcceptTab>
+         <DataBindingContentVersion>0</DataBindingContentVersion>
+         <XElements>
+            <Element xsi:type="XString" StyleIndex="7">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>入</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="8">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="7">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>院</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="8">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="7">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>记</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="8">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="7">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>录</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="2" />
+            <Element xsi:type="XTextTable" NumOfRows="5" NumOfColumns="2">
+               <Attributes />
+               <ID>table1</ID>
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <DataBindingContentVersion>0</DataBindingContentVersion>
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <DataBindingContentVersion>0</DataBindingContentVersion>
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>&#x2002;姓名：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>姓名</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements>
+                                    <Element xsi:type="XString">
+                                       <DataBindingContentVersion>0</DataBindingContentVersion>
+                                       <XElements xsi:nil="true" />
+                                       <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                       <Text>李嫒英</Text>
+                                    </Element>
+                                 </XElements>
+                                 <BorderElementColor />
+                                 <BorderElementColorValue>Transparent</BorderElementColorValue>
+                                 <MoveFocusHotKey>Tab</MoveFocusHotKey>
+                                 <Name>姓名</Name>
+                                 <InnerValue>李嫒英</InnerValue>
+                                 <BackgroundText>姓名</BackgroundText>
+                                 <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+                              </Element>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>&#x2002;</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <DataBindingContentVersion>0</DataBindingContentVersion>
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>出生地：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>出生地</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <BorderElementColorValue>Transparent</BorderElementColorValue>
+                                 <MoveFocusHotKey>Tab</MoveFocusHotKey>
+                                 <Name>出生地</Name>
+                                 <BackgroundText>出生地</BackgroundText>
+                                 <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <DataBindingContentVersion>0</DataBindingContentVersion>
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <DataBindingContentVersion>0</DataBindingContentVersion>
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>&#x2002;性别：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>性别</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements>
+                                    <Element xsi:type="XString">
+                                       <DataBindingContentVersion>0</DataBindingContentVersion>
+                                       <XElements xsi:nil="true" />
+                                       <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                       <Text>女</Text>
+                                    </Element>
+                                 </XElements>
+                                 <BorderElementColor />
+                                 <BorderElementColorValue>Transparent</BorderElementColorValue>
+                                 <MoveFocusHotKey>Tab</MoveFocusHotKey>
+                                 <Name>性别</Name>
+                                 <InnerValue>2</InnerValue>
+                                 <BackgroundText>性别</BackgroundText>
+                                 <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+                                 <EditorActiveMode>Program F2 MouseClick</EditorActiveMode>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <Items>
+                                          <Item>
+                                             <Text>男</Text>
+                                             <Value>1</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>女</Text>
+                                             <Value>2</Value>
+                                          </Item>
+                                       </Items>
+                                    </ListSource>
+                                    <ListItems />
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>&#x2002;&#x2002;</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <DataBindingContentVersion>0</DataBindingContentVersion>
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>职业：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>职业</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <BorderElementColorValue>Transparent</BorderElementColorValue>
+                                 <MoveFocusHotKey>Tab</MoveFocusHotKey>
+                                 <Name>职业</Name>
+                                 <BackgroundText>职业</BackgroundText>
+                                 <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <DataBindingContentVersion>0</DataBindingContentVersion>
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <DataBindingContentVersion>0</DataBindingContentVersion>
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>&#x2002;年龄：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>年龄</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements>
+                                    <Element xsi:type="XString">
+                                       <DataBindingContentVersion>0</DataBindingContentVersion>
+                                       <XElements xsi:nil="true" />
+                                       <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                       <Text>56</Text>
+                                    </Element>
+                                 </XElements>
+                                 <BorderElementColor />
+                                 <BorderElementColorValue>Transparent</BorderElementColorValue>
+                                 <MoveFocusHotKey>Tab</MoveFocusHotKey>
+                                 <Name>年龄</Name>
+                                 <InnerValue>56</InnerValue>
+                                 <BackgroundText>年龄</BackgroundText>
+                                 <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+                                 <FieldSettings>
+                                    <EditStyle>Numeric</EditStyle>
+                                    <ListItems />
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>岁</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <DataBindingContentVersion>0</DataBindingContentVersion>
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>入院时间：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>入院时间</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements>
+                                    <Element xsi:type="XString">
+                                       <DataBindingContentVersion>0</DataBindingContentVersion>
+                                       <XElements xsi:nil="true" />
+                                       <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                       <Text>2019-07-28&#x2002;08:18:03</Text>
+                                    </Element>
+                                 </XElements>
+                                 <BorderElementColor />
+                                 <BorderElementColorValue>Transparent</BorderElementColorValue>
+                                 <MoveFocusHotKey>Tab</MoveFocusHotKey>
+                                 <Name>入院时间</Name>
+                                 <DisplayFormat>
+                                    <Style>DateTime</Style>
+                                    <Format>yyyy-MM-dd HH:mm:ss</Format>
+                                 </DisplayFormat>
+                                 <InnerValue>2019-07-28 08:18:03</InnerValue>
+                                 <BackgroundText>入院时间</BackgroundText>
+                                 <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+                                 <EditorActiveMode>Program F2 MouseClick</EditorActiveMode>
+                                 <FieldSettings>
+                                    <EditStyle>DateTime</EditStyle>
+                                    <ListItems />
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <DataBindingContentVersion>0</DataBindingContentVersion>
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <DataBindingContentVersion>0</DataBindingContentVersion>
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>&#x2002;民族：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="6">
+                                 <Attributes />
+                                 <ID>民族</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements>
+                                    <Element xsi:type="XString" StyleIndex="6">
+                                       <DataBindingContentVersion>0</DataBindingContentVersion>
+                                       <XElements xsi:nil="true" />
+                                       <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                       <Text>汉族</Text>
+                                    </Element>
+                                 </XElements>
+                                 <BorderElementColor />
+                                 <BorderElementColorValue>Transparent</BorderElementColorValue>
+                                 <MoveFocusHotKey>Tab</MoveFocusHotKey>
+                                 <Name>民族</Name>
+                                 <InnerValue>01</InnerValue>
+                                 <BackgroundText>民族</BackgroundText>
+                                 <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+                                 <EditorActiveMode>Program F2 MouseClick</EditorActiveMode>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <Items>
+                                          <Item>
+                                             <Text>汉族</Text>
+                                             <Value>01</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>蒙古族</Text>
+                                             <Value>02</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>回族</Text>
+                                             <Value>03</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>藏族</Text>
+                                             <Value>04</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>维吾尔族</Text>
+                                             <Value>05</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>苗族</Text>
+                                             <Value>06</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>彝族</Text>
+                                             <Value>07</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>壮族</Text>
+                                             <Value>08</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>布依族</Text>
+                                             <Value>09</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>朝鲜族</Text>
+                                             <Value>10</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>满族</Text>
+                                             <Value>11</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>侗族</Text>
+                                             <Value>12</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>瑶族</Text>
+                                             <Value>13</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>白族</Text>
+                                             <Value>14</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>土家族</Text>
+                                             <Value>15</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>哈尼族</Text>
+                                             <Value>16</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>哈萨克族</Text>
+                                             <Value>17</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>傣族</Text>
+                                             <Value>18</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>黎族</Text>
+                                             <Value>19</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>傈僳族</Text>
+                                             <Value>20</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>佤族</Text>
+                                             <Value>21</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>畲族</Text>
+                                             <Value>22</Value>
+                                          </Item>
+                                       </Items>
+                                    </ListSource>
+                                    <ListItems />
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="6">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>&#x2002;</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <DataBindingContentVersion>0</DataBindingContentVersion>
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>记录时间：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>记录时间</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <BorderElementColorValue>Transparent</BorderElementColorValue>
+                                 <MoveFocusHotKey>Tab</MoveFocusHotKey>
+                                 <Name>记录时间</Name>
+                                 <BackgroundText>记录时间</BackgroundText>
+                                 <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+                                 <EditorActiveMode>Program F2 MouseClick</EditorActiveMode>
+                                 <FieldSettings>
+                                    <EditStyle>DateTime</EditStyle>
+                                    <ListItems />
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <DataBindingContentVersion>0</DataBindingContentVersion>
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <DataBindingContentVersion>0</DataBindingContentVersion>
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>&#x2002;婚姻：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>婚姻</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <BorderElementColorValue>Transparent</BorderElementColorValue>
+                                 <MoveFocusHotKey>Tab</MoveFocusHotKey>
+                                 <Name>婚姻</Name>
+                                 <BackgroundText>婚姻</BackgroundText>
+                                 <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+                                 <EditorActiveMode>Program F2 MouseClick</EditorActiveMode>
+                                 <FieldSettings>
+                                    <EditStyle>DropdownList</EditStyle>
+                                    <ListSource>
+                                       <Items>
+                                          <Item>
+                                             <Text>未婚</Text>
+                                             <Value>0</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>已婚</Text>
+                                             <Value>1</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>离异</Text>
+                                             <Value>2</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>丧偶</Text>
+                                             <Value>3</Value>
+                                          </Item>
+                                          <Item>
+                                             <Text>其他</Text>
+                                             <Value>4</Value>
+                                          </Item>
+                                       </Items>
+                                    </ListSource>
+                                    <ListItems />
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>&#x2002;&#x2002;</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="5">
+                           <Attributes />
+                           <DataBindingContentVersion>0</DataBindingContentVersion>
+                           <XElements>
+                              <Element xsi:type="XString">
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements xsi:nil="true" />
+                                 <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+                                 <Text>病史陈述者：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField">
+                                 <Attributes />
+                                 <ID>病史陈述者</ID>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <DataBindingContentVersion>0</DataBindingContentVersion>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <BorderElementColorValue>Transparent</BorderElementColorValue>
+                                 <MoveFocusHotKey>Tab</MoveFocusHotKey>
+                                 <Name>病史陈述者</Name>
+                                 <BackgroundText>病史陈述者</BackgroundText>
+                                 <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Width>937.375</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Width>957.375</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="9" />
+            <Element xsi:type="XString">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="9" />
+            <Element xsi:type="XString">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;医师签名：</Text>
+            </Element>
+            <Element xsi:type="XInputField">
+               <Attributes />
+               <ID>医师签名</ID>
+               <EnableValueValidate>true</EnableValueValidate>
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements />
+               <BorderElementColor />
+               <BorderElementColorValue>Transparent</BorderElementColorValue>
+               <MoveFocusHotKey>Tab</MoveFocusHotKey>
+               <SpecifyWidth>236.2205</SpecifyWidth>
+               <Name>医师签名</Name>
+               <BackgroundText>医师签名</BackgroundText>
+               <RuntimeEnableHighlight>Enabled</RuntimeEnableHighlight>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="9" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextFooter">
+         <Attributes />
+         <ID>divXTextDocumentFooterElement</ID>
+         <AcceptTab>true</AcceptTab>
+         <DataBindingContentVersion>0</DataBindingContentVersion>
+         <XElements>
+            <Element xsi:type="XString">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;&#x2002;第</Text>
+            </Element>
+            <Element xsi:type="XPageInfo">
+               <PropertyExpressions />
+               <Width>85</Width>
+               <AutoHeight>true</AutoHeight>
+               <Height>62.7343674</Height>
+               <FormatString>[%PageIndex%]</FormatString>
+            </Element>
+            <Element xsi:type="XString">
+               <DataBindingContentVersion>0</DataBindingContentVersion>
+               <XElements xsi:nil="true" />
+               <AcceptChildElementTypes2>Text</AcceptChildElementTypes2>
+               <Text>页</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" />
+         </XElements>
+      </Element>
+   </XElements>
+   <ScriptText />
+   <WebClientHtmlText>&lt;script&gt;function aa(){alert('1111');}&lt;/script&gt;</WebClientHtmlText>
+   <SerializeParameterValue>true</SerializeParameterValue>
+   <Parameters />
+   <FileName>FileTemplate/入院记录.xml</FileName>
+   <FileFormat>xml</FileFormat>
+   <UserHistories />
+   <ContentStyles>
+      <Default xsi:type="DocumentContentStyle">
+         <FontName>宋体</FontName>
+         <FontSize>12</FontSize>
+      </Default>
+      <Styles>
+         <Style Index="0">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="1">
+            <FontName>宋体</FontName>
+            <FontSize>15</FontSize>
+            <Bold>true</Bold>
+         </Style>
+         <Style Index="2">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <LineSpacingStyle>Space1pt5</LineSpacingStyle>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="3">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+         <Style Index="4">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <LineSpacingStyle>SpaceMultiple</LineSpacingStyle>
+            <LineSpacing>1.2</LineSpacing>
+         </Style>
+         <Style Index="5">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderWidth>1</BorderWidth>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingRight>15</PaddingRight>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="6">
+            <FontName>宋体</FontName>
+            <FontSize>10.5</FontSize>
+         </Style>
+         <Style Index="7">
+            <FontName>宋体</FontName>
+            <FontSize>18</FontSize>
+            <Bold>true</Bold>
+         </Style>
+         <Style Index="8">
+            <FontName>Times New Roman</FontName>
+            <FontSize>18</FontSize>
+            <Bold>true</Bold>
+         </Style>
+         <Style Index="9">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <LineSpacingStyle>Space1pt5</LineSpacingStyle>
+         </Style>
+      </Styles>
+   </ContentStyles>
+   <RepeatedImages />
+   <GlobalJavaScriptReferences />
+   <Info>
+      <LicenseText>南京都昌信息科技有限公司2020年WEB旗舰版3个并发数:南京都昌信息科技有限公司2020年WEB旗舰版3个并发数</LicenseText>
+      <CreationTime>1980-01-01T00:00:00</CreationTime>
+      <LastModifiedTime>2020-03-13T14:46:37.2561309+08:00</LastModifiedTime>
+      <LastPrintTime>1980-01-01T00:00:00</LastPrintTime>
+      <Operator>DCSoft.Writer Version:1.2019.1.4</Operator>
+      <NumOfPage>1</NumOfPage>
+   </Info>
+   <BodyText>入 院 记 录
+ 姓名：李嫒英  出生地： 
+ 性别：女   职业： 
+ 年龄：56岁 入院时间：2019-07-28 08:18:03 
+ 民族：汉族  记录时间： 
+ 婚姻：   病史陈述者： 
+ 
+                                                      医师签名：</BodyText>
+   <Comments />
+   <LocalConfig />
+   <PageSettings>
+      <PageIndexsForHideHeaderFooter />
+      <PrinterName />
+      <PaperSource />
+      <LeftMargin>95</LeftMargin>
+      <RightMargin>95</RightMargin>
+   </PageSettings>
+</XTextDocument>
